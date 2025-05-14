@@ -269,7 +269,7 @@ MonoBehaviour:
   speed: 5
   facing: 1
   rb: {fileID: 1544995173}
-  anim: {fileID: 0}
+  anim: {fileID: 1544995171}
 --- !u!50 &1544995173
 Rigidbody2D:
   serializedVersion: 5
