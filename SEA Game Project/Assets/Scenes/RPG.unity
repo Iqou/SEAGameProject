@@ -21073,6 +21073,7 @@ GameObject:
   - component: {fileID: 1014049842}
   - component: {fileID: 1014049841}
   - component: {fileID: 1014049840}
+  - component: {fileID: 1014049844}
   m_Layer: 0
   m_Name: Orc-Idle_0
   m_TagString: Untagged
@@ -21214,6 +21215,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014049844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014049839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d24dfeeb8bd444b9ced57c46d46250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &1125723029
 GameObject:
   m_ObjectHideFlags: 0
@@ -21475,6 +21489,7 @@ GameObject:
   - component: {fileID: 1544995173}
   - component: {fileID: 1544995172}
   - component: {fileID: 1544995171}
+  - component: {fileID: 1544995178}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -21700,6 +21715,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.15395966, y: 0.0991956}
   m_EdgeRadius: 0
+--- !u!114 &1544995178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544995170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba87d6c7bfa07de42a678af2d533a7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 6
+  maxHealth: 6
 --- !u!1 &1576244936
 GameObject:
   m_ObjectHideFlags: 0
