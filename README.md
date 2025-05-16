@@ -1,1 +1,1 @@
-As part of the recruitment process for becoming a laboratory assistant in the Software Engineering & Application (SEA), we were assigned to teams to develop a project based on our chosen specialization. Our team selected Game Development and is currently working on creating a game.
+As part of the recruitment process for becoming a laboratory assistant in the Software Engineering & Application (SEA) laboratory, we were assigned to teams to develop a project based on our chosen specialization. Our team selected Game Development and is currently working on creating a game.
