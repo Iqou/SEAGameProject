@@ -16,4 +16,8 @@ public class Enemy_Knockback : MonoBehaviour
         rb.linearVelocity = direction * knockbackForce;
         Debug.Log("knockback applied.");
     }
+
+    
+
 }
+
