@@ -81,7 +81,7 @@ public class EnemyMovement : MonoBehaviour
                 ChangeState(EnemyState.Attacking);
             }
 
-            else if (Vector2.Distance(transform.position, player.position) > attackRange)
+            else if (Vector2.Distance(transform.position, player.position) > attackRange && enemyState != EnemyState.Attacking)
             {
                 ChangeState(EnemyState.Chasing);
             }
