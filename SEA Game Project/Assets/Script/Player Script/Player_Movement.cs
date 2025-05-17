@@ -70,5 +70,10 @@ public class Movement : MonoBehaviour
         isKnockedback = false;
     }
 
+    public void Knockback(Transform enemy)
+    {
+
+    }
+
 }
 
