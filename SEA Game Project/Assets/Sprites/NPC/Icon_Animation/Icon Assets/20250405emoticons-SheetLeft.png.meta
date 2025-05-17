@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 66a46d95cdb68814a979875783658c7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6905077844947179752
+    second: 20250405emoticons-SheetLeft_0
+  - first:
+      213: -5390494856854660655
+    second: 20250405emoticons-SheetLeft_1
+  - first:
+      213: 2561305707261736579
+    second: 20250405emoticons-SheetLeft_2
+  - first:
+      213: 139766191011079779
+    second: 20250405emoticons-SheetLeft_3
+  - first:
+      213: -2628126828753297744
+    second: 20250405emoticons-SheetLeft_4
+  - first:
+      213: 2959408330104029457
+    second: 20250405emoticons-SheetLeft_5
+  - first:
+      213: 7554515514608448418
+    second: 20250405emoticons-SheetLeft_6
+  - first:
+      213: -5299847094050650853
+    second: 20250405emoticons-SheetLeft_7
+  - first:
+      213: 5824257534762395861
+    second: 20250405emoticons-SheetLeft_8
+  - first:
+      213: -4210872813356499067
+    second: 20250405emoticons-SheetLeft_9
+  - first:
+      213: -1222742051664697079
+    second: 20250405emoticons-SheetLeft_10
+  - first:
+      213: -3482873470949516948
+    second: 20250405emoticons-SheetLeft_11
+  - first:
+      213: -4480323281417605924
+    second: 20250405emoticons-SheetLeft_12
+  - first:
+      213: -8550517852766628183
+    second: 20250405emoticons-SheetLeft_13
+  - first:
+      213: 3549116850576283575
+    second: 20250405emoticons-SheetLeft_14
+  - first:
+      213: -1565782975382638592
+    second: 20250405emoticons-SheetLeft_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 95
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e81f7e17b3c3df50800000000000000
+      internalID: 6905077844947179752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 101
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d99b9ddc7d1135b0800000000000000
+      internalID: -5390494856854660655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 102
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386348a68f59b8320800000000000000
+      internalID: 2561305707261736579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 95
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36623d63c9c80f100800000000000000
+      internalID: 139766191011079779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 95
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be5c7bd294078bd0800000000000000
+      internalID: -2628126828753297744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 63
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111ce25523ee11920800000000000000
+      internalID: 2959408330104029457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 63
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3f962c5d707d860800000000000000
+      internalID: 7554515514608448418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 63
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b158933d5292376b0800000000000000
+      internalID: -5299847094050650853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8a7ef9e5be3d050800000000000000
+      internalID: 5824257534762395861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 63
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f39858c79ff85c0800000000000000
+      internalID: -4210872813356499067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909e7961592f70fe0800000000000000
+      internalID: -1222742051664697079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 31
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c691c6ef7095aafc0800000000000000
+      internalID: -3482873470949516948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 31
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdce03c96b1b2d1c0800000000000000
+      internalID: -4480323281417605924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a69534c055765980800000000000000
+      internalID: -8550517852766628183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 31
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7d3f8b8fef04130800000000000000
+      internalID: 3549116850576283575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250405emoticons-SheetLeft_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000b6f40ea8354ae0800000000000000
+      internalID: -1565782975382638592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20250405emoticons-SheetLeft_0: 6905077844947179752
+      20250405emoticons-SheetLeft_1: -5390494856854660655
+      20250405emoticons-SheetLeft_10: -1222742051664697079
+      20250405emoticons-SheetLeft_11: -3482873470949516948
+      20250405emoticons-SheetLeft_12: -4480323281417605924
+      20250405emoticons-SheetLeft_13: -8550517852766628183
+      20250405emoticons-SheetLeft_14: 3549116850576283575
+      20250405emoticons-SheetLeft_15: -1565782975382638592
+      20250405emoticons-SheetLeft_2: 2561305707261736579
+      20250405emoticons-SheetLeft_3: 139766191011079779
+      20250405emoticons-SheetLeft_4: -2628126828753297744
+      20250405emoticons-SheetLeft_5: 2959408330104029457
+      20250405emoticons-SheetLeft_6: 7554515514608448418
+      20250405emoticons-SheetLeft_7: -5299847094050650853
+      20250405emoticons-SheetLeft_8: 5824257534762395861
+      20250405emoticons-SheetLeft_9: -4210872813356499067
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
