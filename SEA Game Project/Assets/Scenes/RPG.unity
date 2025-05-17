@@ -25620,7 +25620,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 5120410236738981136, guid: 192b532caf2c4c14fb52c0e97f81b35f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -25641,8 +25641,8 @@ Transform:
   m_GameObject: {fileID: 1012831232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.84, y: 3.46, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 13.25, y: 5.92, z: 0}
+  m_LocalScale: {x: -5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -25682,6 +25682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  enemyState: 0
 --- !u!58 &1012831240
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25716,8 +25717,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.043902587, y: 0}
-  m_Radius: 0.9220638
+  m_Offset: {x: 0.27897578, y: 0}
+  m_Radius: 0.59918547
 --- !u!1 &1125723029
 GameObject:
   m_ObjectHideFlags: 0
@@ -29111,9 +29112,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 1875720817}
   - {fileID: 1544995176}
+  - {fileID: 1012831237}
+  - {fileID: 1209490146}
   - {fileID: 2117590102}
   - {fileID: 158964006}
-  - {fileID: 1209490146}
-  - {fileID: 1012831237}
   - {fileID: 2050854421}
   - {fileID: 746329949}
