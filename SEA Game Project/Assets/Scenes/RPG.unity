@@ -24810,7 +24810,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24484365, y: 6.51292, z: -10}
+  m_LocalPosition: {x: 0.25273418, y: 6.51293, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26521,41 +26521,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 318901029055186075, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 504466395318301620, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 504466395318301620, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 504466395318301620, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 504466395318301620, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2062953598126689162, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2062953598126689162, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2062953598126689162, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 2062953598126689162, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2062953598126689162, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 570
       objectReference: {fileID: 0}
     - target: {fileID: 2630991214735499779, guid: 8191895d5037d624c8ccf6419f214fc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26618,6 +26622,7 @@ GameObject:
   - component: {fileID: 1544995171}
   - component: {fileID: 1544995178}
   - component: {fileID: 1544995179}
+  - component: {fileID: 1544995180}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -26663,6 +26668,7 @@ MonoBehaviour:
   facing: 1
   rb: {fileID: 1544995173}
   anim: {fileID: 1544995171}
+  player_Combat: {fileID: 1544995180}
 --- !u!50 &1544995173
 Rigidbody2D:
   serializedVersion: 5
@@ -26858,6 +26864,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.15877429, y: 0.06476013}
   m_EdgeRadius: 0
+--- !u!114 &1544995180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544995170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f53390876e0d14f8dcfcf4827f66bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1544995171}
 --- !u!1 &1576244936
 GameObject:
   m_ObjectHideFlags: 0
@@ -29389,7 +29408,7 @@ Transform:
   m_GameObject: {fileID: 1785228767}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24472943, y: 6.11361, z: -10}
+  m_LocalPosition: {x: 0.25251642, y: 6.11361, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
