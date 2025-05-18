@@ -134,7 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &130775286
 Transform:
   m_ObjectHideFlags: 0
@@ -344,10 +344,10 @@ RectTransform:
   - {fileID: 1517845322}
   m_Father: {fileID: 832952212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 570, y: 0}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &167428545
 MonoBehaviour:
@@ -18925,7 +18925,7 @@ Transform:
   m_GameObject: {fileID: 342272369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.247, y: 0, z: 0}
+  m_LocalPosition: {x: 0.233, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21558,7 +21558,7 @@ Transform:
   m_GameObject: {fileID: 492438232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.247, y: 0, z: 0}
+  m_LocalPosition: {x: 0.247, y: -0.036, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25355,10 +25355,10 @@ RectTransform:
   - {fileID: 1951306055}
   m_Father: {fileID: 832952212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &673076204
 MonoBehaviour:
@@ -26613,9 +26613,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   attackPoint: {fileID: 1214667336}
-  weaponRange: 0.5
+  weaponRange: 2
   knockbackForce: 5
-  stunTime: 0.5
+  stunTime: 0.2
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -26680,8 +26680,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.062581636, y: 0.0056892396}
-  m_Size: {x: 0.15492783, y: 0.25895977}
+  m_Offset: {x: 0.012519074, y: 0.0056892396}
+  m_Size: {x: 0.15921974, y: 0.25895977}
   m_Direction: 0
 --- !u!212 &1012831236
 SpriteRenderer:
@@ -26747,7 +26747,7 @@ Transform:
   m_GameObject: {fileID: 1012831232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.54, y: 5.92, z: 0}
+  m_LocalPosition: {x: 13.63, y: 5.92, z: 0}
   m_LocalScale: {x: -5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26791,7 +26791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   attackRange: 2
-  attackCooldown: 2
+  attackCooldown: 1
   playerDetectRange: 3
   detectionPoint: {fileID: 342272370}
   playerLayer:
@@ -26804,7 +26804,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012831232}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -27594,7 +27594,7 @@ Transform:
   m_GameObject: {fileID: 1310408703}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.308, y: -0.159, z: 0}
+  m_LocalPosition: {x: 0.232, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27855,7 +27855,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -30571,7 +30571,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736347989}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -30613,8 +30613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  attackRange: 2
-  attackCooldown: 2
+  attackRange: 1.7
+  attackCooldown: 1
   playerDetectRange: 3
   detectionPoint: {fileID: 492438233}
   playerLayer:
@@ -30656,9 +30656,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   attackPoint: {fileID: 1310408704}
-  weaponRange: 0.5
+  weaponRange: 1.7
   knockbackForce: 5
-  stunTime: 0.5
+  stunTime: 0.2
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -30723,8 +30723,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.062581636, y: 0.0056892396}
-  m_Size: {x: 0.15492783, y: 0.25895977}
+  m_Offset: {x: 0.012518883, y: 0.0056892396}
+  m_Size: {x: 0.15921974, y: 0.25895977}
   m_Direction: 0
 --- !u!212 &1736347998
 SpriteRenderer:
@@ -30790,7 +30790,7 @@ Transform:
   m_GameObject: {fileID: 1736347989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.34, y: 3.24, z: 0}
+  m_LocalPosition: {x: 20.41, y: 3.24, z: 0}
   m_LocalScale: {x: -5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
