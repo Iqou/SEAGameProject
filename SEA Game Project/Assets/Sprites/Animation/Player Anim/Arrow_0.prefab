@@ -183,6 +183,11 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  sr: {fileID: 925909396597890220}
+  buriedSprite: {fileID: -6662812116773042688, guid: 1026a20db2c552646a83bbd33ba1d0d2, type: 3}
   knockbackForce: 10
   knockbackTime: 0.5
   stunTime: 1
