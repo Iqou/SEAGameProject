@@ -6,22 +6,20 @@ using System.Xml.Serialization;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int currentHealth;
-    public int maxHealth = 10;
     public Slider healthslider;
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthslider.maxValue = maxHealth;
-        healthslider.value = currentHealth;
+        StatsManager.instance.currentHealth = StatsManager.instance.maxHealth;
+        healthslider.maxValue = StatsManager.instance.maxHealth;
+        healthslider.value = StatsManager.instance.currentHealth;
     }
     public void ChangeHealth(int amount)
     {
-        currentHealth += amount;
-        healthslider.value = currentHealth;
+        StatsManager.instance.currentHealth += amount;
+        healthslider.value = StatsManager.instance.currentHealth;
 
-        if (currentHealth <= 0)
+        if (StatsManager.instance.currentHealth <= 0)
         {
             gameObject.SetActive(false);
         }

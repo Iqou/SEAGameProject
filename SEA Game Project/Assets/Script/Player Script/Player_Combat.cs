@@ -5,12 +5,7 @@ using UnityEngine;
 public class Player_Combat : MonoBehaviour
 {
     public Transform attackPoint;
-    public float weaponRange = 1;
-    public float knockbackForce = 50;
-    public float knockbackTime = .15f;
-    public float stunTime = .3f;
     public LayerMask enemyLayer;
-    public int damage = 1;
     public Animator anim;
 
     public float cooldown = 1;
@@ -34,12 +29,12 @@ public class Player_Combat : MonoBehaviour
 
     public void DealDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, StatsManager.instance.weaponRange, enemyLayer);
 
         if (enemies.Length > 0)
         {
-            enemies[0].GetComponent<Enemy_Health>().ChangeHealth(-damage);
-            enemies[0].GetComponent<Enemy_Knockback>().Knockback(transform, knockbackForce, knockbackTime, stunTime);
+            enemies[0].GetComponent<Enemy_Health>().ChangeHealth(-StatsManager.instance.damage);
+            enemies[0].GetComponent<Enemy_Knockback>().Knockback(transform, StatsManager.instance.knockbackForce, StatsManager.instance.knockbackTime, StatsManager.instance.stunTime);
         }
     }
 
@@ -51,7 +46,7 @@ public class Player_Combat : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
+        Gizmos.DrawWireSphere(attackPoint.position, StatsManager.instance.weaponRange);
     }
 
 

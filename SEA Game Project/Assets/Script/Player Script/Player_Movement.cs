@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 5;
     public int facing = 1;
     public Rigidbody2D rb;
     public Animator anim;
@@ -45,7 +44,7 @@ public class Movement : MonoBehaviour
             anim.SetFloat("horizontal", Mathf.Abs(horizontal));
             anim.SetFloat("vertical", Mathf.Abs(vertical));
 
-            rb.linearVelocity = new Vector2(horizontal, vertical) * speed;
+            rb.linearVelocity = new Vector2(horizontal, vertical) * StatsManager.instance.speed;
         }
     }
 
