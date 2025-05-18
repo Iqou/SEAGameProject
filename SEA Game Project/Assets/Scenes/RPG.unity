@@ -1541,8 +1541,8 @@ MonoBehaviour:
   knockbackTime: 0.15
   stunTime: 0.2
   speed: 5
-  maxHealth: 1
-  currentHealth: 1
+  maxHealth: 20
+  currentHealth: 20
 --- !u!1 &321912821
 GameObject:
   m_ObjectHideFlags: 0
@@ -18943,7 +18943,7 @@ GameObject:
   - component: {fileID: 372823017}
   - component: {fileID: 372823016}
   - component: {fileID: 372823015}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collision-Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26871,7 +26871,7 @@ GameObject:
   - component: {fileID: 1125723033}
   - component: {fileID: 1125723032}
   - component: {fileID: 1125723031}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collision-High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27626,7 +27626,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.232, y: -0.03, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -0.13739389, y: -0.20204982, z: -0.20204982}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1736347999}
@@ -28057,6 +28057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchPoint: {fileID: 1132294130}
   arrowPrefab: {fileID: 134539258578608845, guid: 74f1709f5eca0a54c8d20cfa360e389b, type: 3}
+  shootCooldown: 0.5
 --- !u!1 &1576244936
 GameObject:
   m_ObjectHideFlags: 0
@@ -30618,7 +30619,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736347989}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -30662,7 +30663,7 @@ MonoBehaviour:
   speed: 2
   attackRange: 1.7
   attackCooldown: 1
-  playerDetectRange: 3
+  playerDetectRange: 1
   detectionPoint: {fileID: 492438233}
   playerLayer:
     serializedVersion: 2
@@ -30703,7 +30704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   attackPoint: {fileID: 1310408704}
-  weaponRange: 1.7
+  weaponRange: 1
   knockbackForce: 5
   stunTime: 0.2
   playerLayer:
