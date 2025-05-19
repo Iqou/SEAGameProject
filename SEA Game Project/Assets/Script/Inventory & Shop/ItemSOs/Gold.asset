@@ -15,8 +15,8 @@ MonoBehaviour:
   itemName: Gold
   itemDescription: jamur jamur
   icon: {fileID: -7942359355602504142, guid: d511859a84e5c0045ac8c2e86480fc66, type: 3}
-  isGold: 0
-  currentHealth: 5
+  isGold: 1
+  currentHealth: 0
   maxHealth: 0
   speed: 0
   damage: 0
