@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f79beb4648a53f46a6c1f2ed4698c87, type: 3}
-  m_Name: Labu
+  m_Name: Steak
   m_EditorClassIdentifier: 
-  itemName: Pumpkin
+  itemName: Steak
   itemDescription: jamur jamur
-  icon: {fileID: 8389134475083476877, guid: b9fc7f260977acb489a564ba59353e74, type: 3}
+  icon: {fileID: 5558420398955925738, guid: 57265e57cd3d13c43b8f138cfd277012, type: 3}
   isGold: 0
   currentHealth: 5
   maxHealth: 0
