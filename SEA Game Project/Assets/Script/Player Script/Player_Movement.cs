@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public Player_Combat player_Combat;
 
     private bool isKnockedback;
+    public bool isShooting;
 
     private void Update()
     {
@@ -28,7 +29,12 @@ public class Movement : MonoBehaviour
     // Update is called 50x per frame
     void FixedUpdate()
     {
-        if (isKnockedback == false)
+        if (isShooting == true)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        else if (isKnockedback == false)
         {
 
 
