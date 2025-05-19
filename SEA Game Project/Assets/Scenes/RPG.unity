@@ -27145,6 +27145,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6270953770400647376, guid: ce79bff7d9e77f741b991bec87d1da3b, type: 3}
+    - target: {fileID: 2792145590477510094, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792145590477510094, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4753704427801733019, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
       propertyPath: m_Name
       value: 'Loot: Bone'
@@ -28214,6 +28222,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5558420398955925738, guid: 57265e57cd3d13c43b8f138cfd277012, type: 3}
+    - target: {fileID: 2792145590477510094, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792145590477510094, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.66
+      objectReference: {fileID: 0}
     - target: {fileID: 4753704427801733019, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
       propertyPath: m_Name
       value: 'Loot: Steak'
@@ -28222,6 +28238,10 @@ PrefabInstance:
       propertyPath: itemSO
       value: 
       objectReference: {fileID: 11400000, guid: c26a461c547692a449fa58a09f31cb15, type: 2}
+    - target: {fileID: 8734112139622626795, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
+      propertyPath: quantity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8907399021738800202, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.72
@@ -29760,6 +29780,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8389134475083476877, guid: b9fc7f260977acb489a564ba59353e74, type: 3}
+    - target: {fileID: 2792145590477510094, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792145590477510094, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
     - target: {fileID: 4753704427801733019, guid: f2e96de0d07791f439da1a8da251ce6d, type: 3}
       propertyPath: m_Name
       value: 'Loot: Pumpkin'
