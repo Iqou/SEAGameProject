@@ -20,4 +20,10 @@ public class EnemyDamage : MonoBehaviour
             hits[0].GetComponent<Movement>().Knockback(transform, knockbackForce, stunTime);
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
+    }
 }

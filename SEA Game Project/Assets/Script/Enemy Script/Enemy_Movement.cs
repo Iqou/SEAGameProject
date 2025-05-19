@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public class EnemyMovement : MonoBehaviour 
 {
     public float speed;
-    public float attackRange = 2;
-    public float attackCooldown = 2;
-    public float playerDetectRange = 5;
+    public float attackRange ;
+    public float attackCooldown ;
+    public float playerDetectRange ;
     public Transform detectionPoint;
     public LayerMask playerLayer;
 
@@ -125,9 +125,11 @@ public class EnemyMovement : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(detectionPoint.position, attackRange);
         Gizmos.DrawWireSphere(detectionPoint.position, playerDetectRange);
     }
 }
+
 
 public enum EnemyState 
 {
