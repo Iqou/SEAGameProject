@@ -32751,7 +32751,7 @@ GameObject:
   - component: {fileID: 2050854419}
   - component: {fileID: 2050854418}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33531,7 +33531,7 @@ SceneRoots:
   - {fileID: 2117590102}
   - {fileID: 158964006}
   - {fileID: 2050854421}
-  - {fileID: 746329949}
-  - {fileID: 294814215}
   - {fileID: 130775286}
   - {fileID: 1249876180}
+  - {fileID: 294814215}
+  - {fileID: 746329949}
