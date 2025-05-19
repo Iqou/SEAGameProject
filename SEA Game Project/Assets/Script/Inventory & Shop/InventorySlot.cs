@@ -1,16 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class InventoryScript : MonoBehaviour
+public class InventorySlot : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public ItemSO itemSO;
+    public int quantity;
 
-    // Update is called once per frame
-    void Update()
+    public Image itemImage;
+    public TMP_Text quantityText;
+
+    public void UpdateUI()
     {
-        
+        if (itemSO != null)
+        {
+            itemImage.sprite = itemSO.icon;
+            itemImage.gameObject.SetActive(true);
+            quantityText.text = quantity.ToString();
+        }
+        else
+        {
+            itemImage.gameObject.SetActive(false);
+            quantityText.text = "";
+        }
     }
 }

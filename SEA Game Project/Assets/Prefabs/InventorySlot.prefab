@@ -301,3 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c837c16322b05849ae8f5c1fefcf3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSO: {fileID: 0}
+  quantity: 0
+  itemImage: {fileID: 2193585673705112777}
+  quantityText: {fileID: 2633405346549319206}
