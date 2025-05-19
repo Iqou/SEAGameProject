@@ -151,7 +151,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.061881095, y: 0}
+  m_Offset: {x: 0.112350136, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -161,7 +161,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5162378, y: 0.16}
+  m_Size: {x: 0.16777533, y: 0.16}
   m_EdgeRadius: 0
 --- !u!114 &3653441542645944203
 MonoBehaviour:
@@ -178,7 +178,7 @@ MonoBehaviour:
   rb: {fileID: 4948482975798943153}
   direction: {x: 1, y: 0}
   lifeSpawn: 2
-  speed: 8
+  speed: 20
   damage: 1
   enemyLayer:
     serializedVersion: 2
