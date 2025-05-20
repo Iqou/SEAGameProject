@@ -1,10 +1,14 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
-public class StatsManager :MonoBehaviour
+public class StatsManager : MonoBehaviour
 {
     public static StatsManager instance;
+    public StatsUI statsUI;
+    public TMP_Text healthText;
+
     [Header("Combat Stats")]
     public int damage;
     public float knockbackForce;
@@ -21,13 +25,62 @@ public class StatsManager :MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Start()
+    {
+        UpdateHealthText(); // Pastikan teks diperbarui dari awal
+    }
+
+
+    public void UpdateMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        UpdateHealthText();
+    }
+
+    public void UpdateHealth(int amount)
+    {
+        currentHealth += amount;
+
+        // Batas atas dan bawah
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+        else if (currentHealth < 0)
+            currentHealth = 0;
+
+        UpdateHealthText();
+    }
+
+
+    public void UpdateSpeed(int amount)
+    {
+        speed += amount;
+        if (statsUI != null)
+        {
+            statsUI.UpdateAllStats();
+        }
+    }
+
+    private void UpdateHealthText()
+    {
+        Debug.Log($"[UI] UpdateHealthText called: {currentHealth}/{maxHealth}");
+
+        if (healthText != null)
+        {
+            healthText.text = "HP: " + currentHealth + "/" + maxHealth;
+        }
+        else
+        {
+            Debug.LogWarning("healthText is not assigned in StatsManager");
         }
     }
 
