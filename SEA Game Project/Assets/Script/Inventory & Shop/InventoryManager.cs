@@ -18,13 +18,16 @@ public class InventoryManager : MonoBehaviour
     }
     private void OnEnable()
     {
+        Debug.Log("OnEnable: Mendaftarkan AddItem");
         Loot.OnItemLooted += AddItem;
     }
 
     private void OnDisable()
     {
+        Debug.Log("OnDisable: Melepas AddItem");
         Loot.OnItemLooted -= AddItem;
     }
+
 
     public void AddItem(ItemSO itemSO, int quantity)
     {
