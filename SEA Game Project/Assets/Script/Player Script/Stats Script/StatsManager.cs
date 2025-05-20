@@ -70,6 +70,15 @@ public class StatsManager : MonoBehaviour
         }
     }
 
+    public void UpdateDamage(int amount)
+    {
+        damage += amount;
+        if (statsUI != null)
+        {
+            statsUI.UpdateAllStats();
+        }
+    }
+
     private void UpdateHealthText()
     {
         Debug.Log($"[UI] UpdateHealthText called: {currentHealth}/{maxHealth}");
