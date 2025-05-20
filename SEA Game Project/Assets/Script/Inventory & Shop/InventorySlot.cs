@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.EventSystems;
+
 
 public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
@@ -31,12 +31,6 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
                 {
                 inventoryManager.UseItem(this);
                 }
-
-            if (eventData.button == PointerEventData.InputButton.Left)
-            {
-                inventoryManager.UseItem(this);
-            }
-
         }
     }
 
@@ -55,8 +49,4 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
-    {
-        throw new System.NotImplementedException();
     }
-}
