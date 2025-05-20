@@ -19,4 +19,8 @@ public class ItemSO : ScriptableObject
 
     [Header("For Temporary Items")]
     public float duration;
+
+    [Header("Limits")]
+    public int maxQuantity = 5;
+
 }

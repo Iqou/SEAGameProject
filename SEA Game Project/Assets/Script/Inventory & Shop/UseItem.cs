@@ -44,8 +44,5 @@ public void ApplyItemEffects (ItemSO itemSO)
         if (itemSO.damage > 0)
 
             StatsManager.instance.UpdateDamage(-itemSO.damage);
-
-
-
     }
 }
