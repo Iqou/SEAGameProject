@@ -10,6 +10,8 @@ public class Loot : MonoBehaviour
     public Animator anim;
     public int quantity;
 
+    public bool canBePickedUp = true;
+
     public static event Action<ItemSO, int> OnItemLooted;
 
     private void OnValidate()
@@ -17,8 +19,22 @@ public class Loot : MonoBehaviour
         if (itemSO == null)
             return;
 
+    UpdateAppearance();
+    }
+
+    public void Initialized(ItemSO itemSO, int quantity)
+    {
+        this.itemSO = itemSO;
+        this.quantity = quantity;
+        canBePickedUp = false;
+        UpdateAppearance();
+
+    }
+
+    private void UpdateAppearance()
+    {
         sr.sprite = itemSO.icon;
-        this.name = "Loot: " + itemSO.itemName;
+        this.name = itemSO.itemName;
     }
 
     private bool pickedUp = false;
@@ -26,7 +42,7 @@ public class Loot : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (pickedUp) return;
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && canBePickedUp == true)
         {
             pickedUp = true;
             anim.Play("LootPickup");
@@ -34,5 +50,11 @@ public class Loot : MonoBehaviour
             Destroy(gameObject, .5f);
         }
     }
-
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            canBePickedUp = true;
+        }
+    }
 }
