@@ -14,9 +14,13 @@ public void ApplyItemEffects (ItemSO itemSO)
             StatsManager.instance.UpdateMaxHealth(itemSO.maxHealth);
 
         if (itemSO.speed > 0)
-        
+
             StatsManager.instance.UpdateSpeed(itemSO.speed);
-        
+
+         if (itemSO.damage > 0)
+
+            StatsManager.instance.UpdateDamage(itemSO.damage);
+
         if (itemSO.duration > 0)
         
            StartCoroutine(EffectTimer(itemSO, itemSO.duration));
@@ -36,6 +40,12 @@ public void ApplyItemEffects (ItemSO itemSO)
         if (itemSO.speed > 0)
 
             StatsManager.instance.UpdateSpeed(-itemSO.speed);
+
+        if (itemSO.damage > 0)
+
+            StatsManager.instance.UpdateDamage(-itemSO.damage);
+
+
 
     }
 }
