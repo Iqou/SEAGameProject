@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
@@ -15,6 +16,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 
     private InventoryManager inventoryManager;
 
+
     private void Start()
     {
         inventoryManager = GetComponentInParent<InventoryManager>();
@@ -24,10 +26,17 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
     {
         if (quantity > 0)
         {
+
+            if(eventData.button == PointerEventData.InputButton.Left) 
+                {
+                inventoryManager.UseItem(this);
+                }
+
             if (eventData.button == PointerEventData.InputButton.Left)
             {
                 inventoryManager.UseItem(this);
             }
+
         }
     }
 
@@ -44,5 +53,10 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
             itemImage.gameObject.SetActive(false);
             quantityText.text = "";
         }
+    }
+
+    void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
     }
 }
