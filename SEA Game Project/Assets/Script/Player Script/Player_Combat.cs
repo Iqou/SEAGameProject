@@ -12,6 +12,12 @@ public class Player_Combat : MonoBehaviour
     public float cooldown = 1;
     private float timer;
 
+    Audiomanager Audiomanager;
+
+    private void Awake(){
+        Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
+    }
+
     private void Update()
     {
         if (timer > 0 )
@@ -19,10 +25,12 @@ public class Player_Combat : MonoBehaviour
             timer -= Time.deltaTime;
         }
     }
+
     public void Attack()
     {
         if (timer <= 0)
         {
+            PlayAttack();
             anim.SetBool("isAttacking", true);
             timer = cooldown;
         } 
@@ -52,6 +60,9 @@ public class Player_Combat : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, StatsManager.instance.weaponRange);
     }
 
+    void PlayAttack(){
+        Audiomanager.PlaySFX(Audiomanager.attackhit);
+    }
 
 
 

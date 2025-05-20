@@ -6,6 +6,12 @@ public class Enemy_Knockback : MonoBehaviour
 {
     private Rigidbody2D rb;
     private EnemyMovement enemy_Movement;
+    Audiomanager Audiomanager;
+
+    private void Awake(){
+        Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +25,7 @@ public class Enemy_Knockback : MonoBehaviour
         Vector2 direction = (transform.position - forceTransform.position).normalized;
         rb.linearVelocity = direction * knockbackForce;
         Debug.Log("knockback applied.");
+        orcgethit();
     }
 
     IEnumerator StunTimer(float knockbackTime, float stunTime)
@@ -28,6 +35,10 @@ public class Enemy_Knockback : MonoBehaviour
         yield return new WaitForSeconds(stunTime);
         enemy_Movement.ChangeState(EnemyState.Idle);
     }
+
+    void orcgethit(){
+         Audiomanager.PlaySFX(Audiomanager.orcgethit);
+     }
 
 }
 

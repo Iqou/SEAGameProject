@@ -14,6 +14,11 @@ public class Player_Bow : MonoBehaviour
     private float shootTimer;
 
     public Animator anim;
+    Audiomanager Audiomanager;
+
+    private void Awake(){
+        Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -23,6 +28,7 @@ public class Player_Bow : MonoBehaviour
 
         if (Input.GetButtonDown("Shoot") && shootTimer <= 0)
         {
+            PlayAim();
             movement.isShooting = true;
             anim.SetBool("isShooting", true);
         }
@@ -57,13 +63,22 @@ public class Player_Bow : MonoBehaviour
 
     public void Shoot()
     {
+
         if (shootTimer <= 0)
         {
             Arrow arrow = Instantiate(arrowPrefab, launchPoint.position, Quaternion.identity).GetComponent<Arrow>();
             arrow.direction = aimDirection;
             shootTimer = shootCooldown;
+            PlayShot();
         }
         anim.SetBool("isShooting", false);
         movement.isShooting = false;
+    }
+
+    void PlayAim(){
+        Audiomanager.PlaySFX(Audiomanager.bowcharge);
+    }
+    void PlayShot(){
+        Audiomanager.PlaySFX(Audiomanager.bowshoot);
     }
 }

@@ -20,6 +20,13 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Transform player;
     private Animator anim;
+    Audiomanager Audiomanager;
+
+    private void Awake(){
+        Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
+    }
+
+
 
     //start is called before the first frame update
     void Start()
@@ -36,7 +43,7 @@ public class EnemyMovement : MonoBehaviour
         if (enemyState != EnemyState.Knockback)
         {
 
-
+            
             CheckForPlayer();
 
             if (attackCooldownTimer > 0)
@@ -50,7 +57,7 @@ public class EnemyMovement : MonoBehaviour
             else if (enemyState == EnemyState.Attacking)
             {
                 rb.linearVelocity = Vector2.zero;
-
+                
             }
         }
     }
@@ -84,6 +91,8 @@ public class EnemyMovement : MonoBehaviour
             {
                 attackCooldownTimer = attackCooldown;
                 ChangeState(EnemyState.Attacking);
+                playorcattack();
+                
             }
 
             else if (Vector2.Distance(transform.position, player.position) > attackRange && enemyState != EnemyState.Attacking)
@@ -120,6 +129,7 @@ public class EnemyMovement : MonoBehaviour
         anim.SetBool("IsChasing",true);
         else if (enemyState == EnemyState.Attacking)
             anim.SetBool("IsAttacking", true);
+            
     }
 
     private void OnDrawGizmosSelected()
@@ -128,6 +138,10 @@ public class EnemyMovement : MonoBehaviour
         Gizmos.DrawWireSphere(detectionPoint.position, attackRange);
         Gizmos.DrawWireSphere(detectionPoint.position, playerDetectRange);
     }
+
+    void playorcattack(){
+         Audiomanager.PlaySFX(Audiomanager.orcattack);
+     }
 }
 
 

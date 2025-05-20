@@ -10,6 +10,10 @@ public class Movement : MonoBehaviour
 
     private bool isKnockedback;
     public bool isShooting;
+    public float footstepDelay = 0.4f;
+    private float nextFootstepTime = 0f;
+
+    Audiomanager Audiomanager;
 
     private void Update()
     {
@@ -17,6 +21,10 @@ public class Movement : MonoBehaviour
         {
             player_Combat.Attack();
         }
+    }
+
+    private void Awake(){
+        Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
     }
 
 
@@ -32,12 +40,11 @@ public class Movement : MonoBehaviour
         if (isShooting == true)
         {
             rb.linearVelocity = Vector2.zero;
+ 
         }
 
         else if (isKnockedback == false)
         {
-
-
 
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
@@ -50,8 +57,20 @@ public class Movement : MonoBehaviour
             anim.SetFloat("horizontal", Mathf.Abs(horizontal));
             anim.SetFloat("vertical", Mathf.Abs(vertical));
 
-            rb.linearVelocity = new Vector2(horizontal, vertical) * StatsManager.instance.speed;
+            Vector2 movement = new Vector2(horizontal, vertical);
+            rb.linearVelocity = movement * StatsManager.instance.speed;
+            if (movement.magnitude > 0.1f)
+            {
+                if (Time.time >= nextFootstepTime)
+                {
+                    PlayFootsteps();
+                    nextFootstepTime = Time.time + footstepDelay;
+                }
+            }
+            
         }
+
+
     }
 
     void flip()
@@ -79,6 +98,8 @@ public class Movement : MonoBehaviour
     {
 
     }
-
+    void PlayFootsteps(){
+        Audiomanager.PlaySFX(Audiomanager.walking);
+    }
 }
 
