@@ -18,13 +18,16 @@ public class InventoryManager : MonoBehaviour
     }
     private void OnEnable()
     {
+        Debug.Log("OnEnable: Mendaftarkan AddItem");
         Loot.OnItemLooted += AddItem;
     }
 
     private void OnDisable()
     {
+        Debug.Log("OnDisable: Melepas AddItem");
         Loot.OnItemLooted -= AddItem;
     }
+
 
     public void AddItem(ItemSO itemSO, int quantity)
     {
@@ -34,19 +37,29 @@ public class InventoryManager : MonoBehaviour
             goldText.text = gold.ToString();
             return;
         }
-        else
-        {
-            foreach (var slot in itemSlots)
-            {
-                if (slot.itemSO == null)
-                {
-                    slot.itemSO = itemSO;
-                    slot.quantity = quantity;
-                    slot.UpdateUI();
-                    return;
 
-                }
+        // Cek apakah item sudah ada di slot
+        foreach (var slot in itemSlots)
+        {
+            if (slot.itemSO == itemSO)
+            {
+                slot.quantity += quantity;
+                slot.UpdateUI();
+                return;
+            }
+        }
+
+        // Kalau belum ada, cari slot kosong
+        foreach (var slot in itemSlots)
+        {
+            if (slot.itemSO == null)
+            {
+                slot.itemSO = itemSO;
+                slot.quantity = quantity;
+                slot.UpdateUI();
+                return;
             }
         }
     }
+
 }

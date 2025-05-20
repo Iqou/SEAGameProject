@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
   public TMP_Text actorName;
   public TMP_Text dialogueText;
   public bool isDialogueActive;
+  public Button[] choiceButton;
 
   public DialogueSO currentDialogue;
   private int dialogueIndex;
@@ -26,6 +27,10 @@ public class DialogueManager : MonoBehaviour
 	CanvasGroup.alpha = 0;
 	CanvasGroup.interactable = false;
 	CanvasGroup.blocksRaycasts = false;
+
+	foreach (var button in choiceButton)
+		button.gameObject.SetActive(false);
+
   }
 
   public void StartDialogue(DialogueSO dialogueSO)
@@ -41,7 +46,7 @@ public class DialogueManager : MonoBehaviour
 	if(dialogueIndex < currentDialogue.lines.Length)
 		ShowDialogue();
 	else
-		EndDialogue();
+		ShowChoices();
   }
 
   private void ShowDialogue()
@@ -63,8 +68,56 @@ public class DialogueManager : MonoBehaviour
   {
 	  dialogueIndex = 0;
 	  isDialogueActive = false;
+	  ClearChoices();
 	  CanvasGroup.alpha = 0;
 	  CanvasGroup.interactable = false;
 	  CanvasGroup.blocksRaycasts = false;
   }
+
+  private void ShowChoices()
+  {
+	  ClearChoices();
+	  
+	  if (currentDialogue.options.Length > 0)
+	  {
+			for(int i = 0 ; i < currentDialogue.options.Length; i++)
+			{
+				var option = currentDialogue.options[i];
+
+				choiceButton[i].GetComponentInChildren<TMP_Text>().text = option.optionText;
+				choiceButton[i].gameObject.SetActive(true);
+
+				choiceButton[i].onClick.AddListener(() => ChooseOption(option.nextDialogue));
+			}
+	  }
+	  else
+	  {
+		  choiceButton[0].GetComponentInChildren<TMP_Text>().text = "End";
+		  choiceButton[0].onClick.AddListener(EndDialogue);
+		  choiceButton[0].gameObject.SetActive(true);
+	  }
+  }
+
+  private void ChooseOption(DialogueSO dialogueSO)
+  {
+	  if(dialogueSO == null)
+		EndDialogue();
+	  else
+	  {
+		  ClearChoices();
+		  StartDialogue(dialogueSO);
+	  }
+
+  }	
+
+  private void ClearChoices()
+  {
+	  foreach(var button in choiceButton)
+	  {
+		  button.gameObject.SetActive(false);
+		  button.onClick.RemoveAllListeners();
+
+	  }
+  }
+
 }
