@@ -21,3 +21,8 @@ MonoBehaviour:
     text: PAKE PRINTF
   - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: PRINTF HALLO WORLD
+  options:
+  - optionText: UDAH YAPPIG NYA
+    nextDialogue: {fileID: 11400000, guid: d3033f3e13bfa894d871ae93f6d84521, type: 2}
+  - optionText: BYE BYE
+    nextDialogue: {fileID: 11400000, guid: c4477380a7191b3488667966652a74c9, type: 2}

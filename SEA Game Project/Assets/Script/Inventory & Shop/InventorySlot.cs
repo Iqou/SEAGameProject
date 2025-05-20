@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
@@ -20,14 +21,22 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
     {
         inventoryManager = GetComponentInParent<InventoryManager>();
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (quantity > 0)
         {
+
             if(eventData.button == PointerEventData.InputButton.Left) 
                 {
                 inventoryManager.UseItem(this);
                 }
+
+            if (eventData.button == PointerEventData.InputButton.Left)
+            {
+                inventoryManager.UseItem(this);
+            }
+
         }
     }
 
