@@ -139,6 +139,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -397,7 +410,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      winter waterfall B 16x16_0: 9076719018699490750
+      winter waterfall B 16x16_1: 8461181467537789343
+      winter waterfall B 16x16_10: 3492394050326253572
+      winter waterfall B 16x16_2: 775314004906808626
+      winter waterfall B 16x16_3: 8889219359450635228
+      winter waterfall B 16x16_4: 7850838367617534744
+      winter waterfall B 16x16_5: 7432086677559426773
+      winter waterfall B 16x16_6: -6225114606843125791
+      winter waterfall B 16x16_7: 5318360107079569459
+      winter waterfall B 16x16_8: -1355223249313355053
+      winter waterfall B 16x16_9: -7079119659922573924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
