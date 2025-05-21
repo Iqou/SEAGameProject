@@ -94,12 +94,14 @@ public class DialogueManager : MonoBehaviour
 				choiceButton[i].gameObject.SetActive(true);
 
 				choiceButton[i].onClick.AddListener(() => ChooseOption(option.nextDialogue));
+				choiceButton[i].onClick.AddListener(buttonsound);
 			}
 	  }
 	  else
 	  {
 		  choiceButton[0].GetComponentInChildren<TMP_Text>().text = "End";
 		  choiceButton[0].onClick.AddListener(EndDialogue);
+		  choiceButton[0].onClick.AddListener(buttonsound);
 		  choiceButton[0].gameObject.SetActive(true);
 	  }
   }
@@ -147,5 +149,9 @@ public class DialogueManager : MonoBehaviour
             Audiomanager.PlaySFX(Audiomanager.talksound5);
             break;
     }
+  }
+
+  void buttonsound(){
+	  Audiomanager.PlaySFX(Audiomanager.button);
   }
 }

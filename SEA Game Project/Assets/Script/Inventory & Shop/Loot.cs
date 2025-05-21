@@ -13,7 +13,12 @@ public class Loot : MonoBehaviour
     public bool canBePickedUp = true;
 
     public static event Action<ItemSO, int> OnItemLooted;
+    Audiomanager Audiomanager;
 
+  private void Awake()
+  {
+	Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
+  }
     private void OnValidate()
     {
         if (itemSO == null)
@@ -44,10 +49,12 @@ public class Loot : MonoBehaviour
         if (pickedUp) return;
         if (collision.CompareTag("Player") && canBePickedUp == true)
         {
+            pickupitem();
             pickedUp = true;
             anim.Play("LootPickup");
             OnItemLooted.Invoke(itemSO, quantity);
             Destroy(gameObject, .5f);
+
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -56,5 +63,8 @@ public class Loot : MonoBehaviour
         {
             canBePickedUp = true;
         }
+    }
+    void pickupitem(){
+        Audiomanager.PlaySFX(Audiomanager.pickitem);
     }
 }

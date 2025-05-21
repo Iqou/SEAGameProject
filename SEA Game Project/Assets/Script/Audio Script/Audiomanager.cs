@@ -22,10 +22,12 @@ public class Audiomanager : MonoBehaviour
     public AudioClip talksound3;
     public AudioClip talksound4;
     public AudioClip talksound5;
+    public AudioClip button;
 
 
     private void Start(){
         musicSource.clip = background;
+        musicSource.loop = true;
         musicSource.Play();
     }
 

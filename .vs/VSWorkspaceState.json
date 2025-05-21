@@ -5,10 +5,11 @@
     "\\SEA Game Project\\Assets",
     "\\SEA Game Project\\Assets\\Script",
     "\\SEA Game Project\\Assets\\Script\\Audio Script",
+    "\\SEA Game Project\\Assets\\Script\\Inventory \u0026 Shop",
     "\\SEA Game Project\\Assets\\Script\\NPC Script",
     "\\SEA Game Project\\Assets\\Script\\NPC Script\\DialogueSript",
     "\\SEA Game Project\\Assets\\Script\\Player Script"
   ],
-  "SelectedNode": "\\SEA Game Project\\Assets\\Script\\NPC Script\\DialogueSO.cs",
+  "SelectedNode": "\\SEA Game Project\\Assets\\Script\\Inventory \u0026 Shop\\Loot.cs",
   "PreviewInSolutionExplorer": false
 }

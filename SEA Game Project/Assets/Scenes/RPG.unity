@@ -172,7 +172,7 @@ MonoBehaviour:
   walking: {fileID: 8300000, guid: f92a4ed8dddbabe48b20d3aae8404dff, type: 3}
   attackhit: {fileID: 8300000, guid: 45a5d9222eb04454780b5d703f21af5b, type: 3}
   playergethit: {fileID: 8300000, guid: a958e6ee33affa2418dc318f556675ed, type: 3}
-  pickitem: {fileID: 0}
+  pickitem: {fileID: 8300000, guid: 03b0f096facc3ad45bf99ce01f932e10, type: 3}
   bowcharge: {fileID: 8300000, guid: 1ff451521a494724ea4b844df4f676b6, type: 3}
   bowshoot: {fileID: 8300000, guid: 418c141151233014595050e368591b13, type: 3}
   orcattack: {fileID: 8300000, guid: a9b2c51f71ba22b4583502fc944d5b2a, type: 3}
@@ -182,6 +182,7 @@ MonoBehaviour:
   talksound3: {fileID: 8300000, guid: 2b8a9f1810575784794003528b643d12, type: 3}
   talksound4: {fileID: 8300000, guid: e1b76103433b7c84381a49941ea98a35, type: 3}
   talksound5: {fileID: 8300000, guid: 00233c550e5a5954197f12c25a7848ab, type: 3}
+  button: {fileID: 8300000, guid: 5a0c00a7a25c06046bbaf84300a01496, type: 3}
 --- !u!1001 &14918976
 PrefabInstance:
   m_ObjectHideFlags: 0
