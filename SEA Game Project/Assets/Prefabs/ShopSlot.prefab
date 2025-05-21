@@ -334,7 +334,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1707588454504802981}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6479678395623818964}
+        m_TargetAssemblyTypeName: ShopSlot, Assembly-CSharp
+        m_MethodName: OnBuyButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6479678395623818964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,6 +363,7 @@ MonoBehaviour:
   itemNameText: {fileID: 1464855030499191614}
   priceText: {fileID: 6863368107515095123}
   itemImage: {fileID: 6347076897907767579}
+  shopManager: {fileID: 0}
 --- !u!1 &4954676187064022113
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
