@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SEA Game Project",
+    "\\SEA Game Project\\Assets",
+    "\\SEA Game Project\\Assets\\Script",
+    "\\SEA Game Project\\Assets\\Script\\Audio Script",
+    "\\SEA Game Project\\Assets\\Script\\NPC Script",
+    "\\SEA Game Project\\Assets\\Script\\NPC Script\\DialogueSript",
+    "\\SEA Game Project\\Assets\\Script\\Player Script"
   ],
-  "SelectedNode": "\\SEA Game Project.sln",
+  "SelectedNode": "\\SEA Game Project\\Assets\\Script\\NPC Script\\DialogueSO.cs",
   "PreviewInSolutionExplorer": false
 }

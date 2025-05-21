@@ -17,6 +17,11 @@ public class Audiomanager : MonoBehaviour
     public AudioClip bowshoot;
     public AudioClip orcattack;
     public AudioClip orcgethit;
+    public AudioClip talksound1;
+    public AudioClip talksound2;
+    public AudioClip talksound3;
+    public AudioClip talksound4;
+    public AudioClip talksound5;
 
 
     private void Start(){

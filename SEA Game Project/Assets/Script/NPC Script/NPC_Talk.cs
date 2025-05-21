@@ -9,6 +9,7 @@ public class NPC_Talk : MonoBehaviour
     public Animator interactAnim;
     public DialogueSO dialogueSO;
 
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,11 +40,15 @@ public class NPC_Talk : MonoBehaviour
     {
         if(Input.GetButtonDown("Interact"))
         {
-            if(DialogueManager.Instance.isDialogueActive)
+            if(DialogueManager.Instance.isDialogueActive){
                 DialogueManager.Instance.AdvanceDialogue();
-
-            else
+                
+            }
+            else{
                 DialogueManager.Instance.StartDialogue(dialogueSO);
+                
+            }
         }
-    }
+    } 
 }
+

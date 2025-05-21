@@ -17,9 +17,12 @@ public class DialogueManager : MonoBehaviour
 
   public DialogueSO currentDialogue;
   private int dialogueIndex;
+  Audiomanager Audiomanager;
 
   private void Awake()
   {
+	Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
+
 	if(Instance == null)
 		Instance = this;
 	else
@@ -39,12 +42,15 @@ public class DialogueManager : MonoBehaviour
 	  dialogueIndex = 0;
 	  isDialogueActive = true;
 	  ShowDialogue();
+	  playdialoguesound();
   }
 
   public void AdvanceDialogue()
   {
-	if(dialogueIndex < currentDialogue.lines.Length)
+	if(dialogueIndex < currentDialogue.lines.Length){
 		ShowDialogue();
+		playdialoguesound();
+	}
 	else
 		ShowChoices();
   }
@@ -120,4 +126,26 @@ public class DialogueManager : MonoBehaviour
 	  }
   }
 
+  void playdialoguesound(){
+    int randomIndex = Random.Range(1, 6);
+
+    switch(randomIndex)
+    {
+        case 1:
+            Audiomanager.PlaySFX(Audiomanager.talksound1);
+            break;
+        case 2:
+            Audiomanager.PlaySFX(Audiomanager.talksound2);
+            break;
+        case 3:
+            Audiomanager.PlaySFX(Audiomanager.talksound3);
+            break;
+        case 4:
+            Audiomanager.PlaySFX(Audiomanager.talksound4);
+            break;
+        case 5:
+            Audiomanager.PlaySFX(Audiomanager.talksound5);
+            break;
+    }
+  }
 }

@@ -177,6 +177,11 @@ MonoBehaviour:
   bowshoot: {fileID: 8300000, guid: 418c141151233014595050e368591b13, type: 3}
   orcattack: {fileID: 8300000, guid: a9b2c51f71ba22b4583502fc944d5b2a, type: 3}
   orcgethit: {fileID: 8300000, guid: d4eda2489d6d6624f84d727fefcd8f6f, type: 3}
+  talksound1: {fileID: 8300000, guid: baf66ead82d763846b1b8588f8daf989, type: 3}
+  talksound2: {fileID: 8300000, guid: 1a4d62f917e605346a9143ee0e9a6bd5, type: 3}
+  talksound3: {fileID: 8300000, guid: 2b8a9f1810575784794003528b643d12, type: 3}
+  talksound4: {fileID: 8300000, guid: e1b76103433b7c84381a49941ea98a35, type: 3}
+  talksound5: {fileID: 8300000, guid: 00233c550e5a5954197f12c25a7848ab, type: 3}
 --- !u!1001 &14918976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,7 +543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &130775286
 Transform:
   m_ObjectHideFlags: 0
@@ -1209,10 +1214,10 @@ RectTransform:
   - {fileID: 1517845322}
   m_Father: {fileID: 832952212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 570, y: 0}
-  m_SizeDelta: {x: 600, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &167428545
 MonoBehaviour:
@@ -26948,10 +26953,10 @@ RectTransform:
   - {fileID: 1951306055}
   m_Father: {fileID: 832952212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 200}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &673076204
 MonoBehaviour:
