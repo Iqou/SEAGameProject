@@ -14,6 +14,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
+        goldText.text = gold.ToString();
         foreach (var slot in itemSlots)
         {
             slot.UpdateUI();
