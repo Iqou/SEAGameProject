@@ -15,6 +15,7 @@ public class Player_Combat : MonoBehaviour
     Audiomanager Audiomanager;
 
     private void Awake(){
+        DontDestroyOnLoad(gameObject);
         Audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
     }
 
