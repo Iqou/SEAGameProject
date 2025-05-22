@@ -7,7 +7,7 @@ public class StatsManager : MonoBehaviour
 {
     public static StatsManager instance;
     public StatsUI statsUI;
-    public TMP_Text healthText;
+    public TMP_Text healthSliderText;
     public Slider healthSlider; // Tambahkan ini
 
     [Header("Combat Stats")]
@@ -38,7 +38,7 @@ public class StatsManager : MonoBehaviour
 
     private void Update()
     {
-        UpdateHealthText();
+        UpdateHealthSlider();
     }
 
     private void Start()
@@ -91,14 +91,14 @@ public class StatsManager : MonoBehaviour
         }
     }
 
-   
-    private void UpdateHealthText()
-    {
+
+
 
     private void UpdateHealthSlider()
     {
         Debug.Log($"[UI] UpdateHealthSlider called: {currentHealth}/{maxHealth}");
 
+        
         if (healthSlider != null)
         {
             healthSlider.maxValue = maxHealth;
@@ -107,6 +107,16 @@ public class StatsManager : MonoBehaviour
         else
         {
             Debug.LogWarning("healthSlider is not assigned in StatsManager");
+        }
+
+        
+        if (healthSliderText != null)
+        {
+            healthSliderText.text = $"{currentHealth} / {maxHealth}";
+        }
+        else
+        {
+            Debug.LogWarning("healthSliderText is not assigned in StatsManager");
         }
     }
 
