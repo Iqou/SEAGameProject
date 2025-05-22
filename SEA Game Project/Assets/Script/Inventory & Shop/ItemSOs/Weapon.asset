@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f79beb4648a53f46a6c1f2ed4698c87, type: 3}
-  m_Name: Steak
+  m_Name: Weapon
   m_EditorClassIdentifier: 
-  itemName: Steak
-  itemDescription: 'Nambah Damage cuyy asik
-
-'
-  icon: {fileID: 5558420398955925738, guid: 57265e57cd3d13c43b8f138cfd277012, type: 3}
+  itemName: Kayu
+  itemDescription: "Gatau ga ada asset \n"
+  icon: {fileID: -6739551860241670898, guid: c7fe1cc659bb60a4c949ab4dc7fdc11d, type: 3}
   isGold: 0
   currentHealth: 0
   maxHealth: 0

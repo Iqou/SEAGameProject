@@ -36,6 +36,11 @@ public class StatsManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        UpdateHealthText();
+    }
+
     private void Start()
     {
         UpdateHealthSlider();
@@ -87,6 +92,8 @@ public class StatsManager : MonoBehaviour
     }
 
    
+    private void UpdateHealthText()
+    {
 
     private void UpdateHealthSlider()
     {

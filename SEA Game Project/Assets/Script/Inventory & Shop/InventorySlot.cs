@@ -28,11 +28,11 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 
     private void OnEnable()
     {
-        ShopManager.OnShopStateChanged += HandleShopStateChanged;
+        ShopKeeper.OnShopStateChanged += HandleShopStateChanged;
     }
     private void OnDisable()
     {
-        ShopManager.OnShopStateChanged -= HandleShopStateChanged;
+        ShopKeeper.OnShopStateChanged -= HandleShopStateChanged;
     }
 
     private void HandleShopStateChanged(ShopManager shopManager, bool isOpen)
@@ -52,9 +52,12 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 
                 if (activeShop != null)
                 {
-                    activeShop.SellItem(itemSO);
-                    quantity--;
-                    UpdateUI();
+                    bool sold = activeShop.SellItem(itemSO);
+                    if (sold)
+                    {
+                        // Pengurangan item dan UI sudah ditangani oleh RemoveItem()
+                    }
+
                 }
                 else
                 {

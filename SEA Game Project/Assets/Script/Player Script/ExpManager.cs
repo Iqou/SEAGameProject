@@ -17,8 +17,11 @@ public class ExpManager : MonoBehaviour
     {
         UpdateUI();
     }
+
+
     private void Update()
     {
+        UpdateUI();
         if (Input.GetKeyDown(KeyCode.Return))
         {
             GainExperience(2);

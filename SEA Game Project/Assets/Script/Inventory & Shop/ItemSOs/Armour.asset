@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f79beb4648a53f46a6c1f2ed4698c87, type: 3}
-  m_Name: Steak
+  m_Name: Armour
   m_EditorClassIdentifier: 
-  itemName: Steak
-  itemDescription: 'Nambah Damage cuyy asik
-
-'
-  icon: {fileID: 5558420398955925738, guid: 57265e57cd3d13c43b8f138cfd277012, type: 3}
+  itemName: Armour
+  itemDescription: Katanya ini adalah armor karakter utama di cerita sebelumnya
+  icon: {fileID: 1448252480329919801, guid: e25c9631ea0c2ce4b8fb006fda2177fa, type: 3}
   isGold: 0
   currentHealth: 0
   maxHealth: 0
