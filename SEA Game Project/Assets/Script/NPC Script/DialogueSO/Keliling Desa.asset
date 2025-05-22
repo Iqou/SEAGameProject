@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b2803ef1adfc34489cb771cca639c34, type: 3}
-  m_Name: Lanjut Yapping
+  m_Name: Keliling Desa
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
-    text: BELUM
-  options:
-  - optionText: UDAH YAPPINGNYA???
-    nextDialogue: {fileID: 11400000}
-  - optionText: STOP
-    nextDialogue: {fileID: 11400000, guid: c4477380a7191b3488667966652a74c9, type: 2}
+  - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
+    text: SILAHKAN BERKELILING DESA INI SEPUASNYA
+  - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
+    text: DESA AERIS MENYAMBUTMU
+  options: []
