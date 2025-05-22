@@ -24,6 +24,9 @@ public class StatsManager : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    [Header("Points")]
+    public int levelPoints;
+
     private void Awake()
     {
         if (instance == null)
@@ -119,5 +122,40 @@ public class StatsManager : MonoBehaviour
             Debug.LogWarning("healthSliderText is not assigned in StatsManager");
         }
     }
+    public void UpgradeStat(string statName)
+    {
+        if (levelPoints <= 0)
+        {
+            Debug.Log("Tidak ada levelPoints tersisa.");
+            return;
+        }
+
+        switch (statName.ToLower())
+        {
+            case "health":
+                UpdateMaxHealth(10);
+                UpdateHealth(10); // ikut menambah currentHealth
+                break;
+            case "damage":
+                UpdateDamage(1);
+                break;
+            case "speed":
+                UpdateSpeed(1);
+                break;
+            default:
+                Debug.LogWarning("Stat tidak dikenal: " + statName);
+                return;
+        }
+
+        levelPoints--;
+
+        if (statsUI != null)
+        {
+            statsUI.UpdateAllStats();
+        }
+
+        Debug.Log($"Stat '{statName}' berhasil di-upgrade. Sisa poin: {levelPoints}");
+    }
+
 
 }

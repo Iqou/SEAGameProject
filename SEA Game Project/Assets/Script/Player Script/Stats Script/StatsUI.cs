@@ -6,6 +6,7 @@ public class StatsUI : MonoBehaviour
 {
     public GameObject[] statsSlots;
     public CanvasGroup statsCanvas;
+    public TMP_Text levelPointsText;
 
     private bool statsOpen = false;
     private void Start()
@@ -49,10 +50,27 @@ public class StatsUI : MonoBehaviour
     {
         statsSlots[2].GetComponentInChildren<TMP_Text>().text = "Health: " + StatsManager.instance.maxHealth;
     }
+    public void OnUpgradeHealthClicked()
+    {
+        StatsManager.instance.UpgradeStat("health");
+    }
+
+    public void OnUpgradeDamageClicked()
+    {
+        StatsManager.instance.UpgradeStat("damage");
+    }
+
+    public void OnUpgradeSpeedClicked()
+    {
+        StatsManager.instance.UpgradeStat("speed");
+    }
+
     public void UpdateAllStats()
     {
         UpdateDamage();
         UpdateSpeed();
         UpdateHealth();
+        if (levelPointsText != null)
+            levelPointsText.text = "Points: " + StatsManager.instance.levelPoints;
     }
 }

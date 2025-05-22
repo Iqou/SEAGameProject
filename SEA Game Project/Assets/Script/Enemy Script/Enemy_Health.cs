@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Health : MonoBehaviour
 {
-    public int expReward = 3;
+    public int expReward = 60;
     public delegate void MonsterDefeated(int exp);
     public static event MonsterDefeated OnMonsterDefeated;
     public int currentHealth;

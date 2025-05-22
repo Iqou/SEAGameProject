@@ -9,7 +9,7 @@ public class ExpManager : MonoBehaviour
     public int level;
     public int currentExp;
     public int expToLevel = 10;
-    public float expGrowthMultiplier = 1.2f;
+    public float expGrowthMultiplier = 0.4f;
     public Slider expSlider;
     public TMP_Text currentLevelText;
 
@@ -24,7 +24,7 @@ public class ExpManager : MonoBehaviour
         UpdateUI();
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            GainExperience(2);
+            GainExperience(10);
         }
     }
     private void OnEnable()
@@ -50,6 +50,15 @@ public class ExpManager : MonoBehaviour
         level++;
         currentExp -= expToLevel;
         expToLevel = Mathf.RoundToInt(expToLevel * expGrowthMultiplier);
+
+        
+        StatsManager.instance.levelPoints += 1;
+
+        
+        if (StatsManager.instance.statsUI != null)
+        {
+            StatsManager.instance.statsUI.UpdateAllStats();
+        }
     }
 
     public void UpdateUI()
@@ -58,4 +67,7 @@ public class ExpManager : MonoBehaviour
         expSlider.value = currentExp;
         currentLevelText.text = "Level: " + level; 
     }
+
+
 }
+
