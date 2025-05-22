@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ShopSlot : MonoBehaviour, IPointEnterHandler
+public class ShopSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public ItemSO itemSO;
     public TMP_Text itemNameText;
@@ -19,7 +19,7 @@ public class ShopSlot : MonoBehaviour, IPointEnterHandler
 
     public void Initialize(ItemSO newItemSO, int price, ShopManager shopManager)
     {
-        this.shopManager = shopManager; // tambahkan ini!
+        this.shopManager = shopManager;
         itemSO = newItemSO;
         itemImage.sprite = itemSO.icon;
         itemNameText.text = itemSO.itemName;
@@ -27,14 +27,18 @@ public class ShopSlot : MonoBehaviour, IPointEnterHandler
         priceText.text = price.ToString();
     }
 
-
     public void OnBuyButtonClicked()
     {
         shopManager.TryBuyItem(itemSO, price);
     }
-    public void OnPointEnter(PointerEventData eventData)
+
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        shopInfo.ShowItemInfo(itemSO);
+               shopInfo.ShowItemInfo(itemSO);
     }
 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        shopInfo.HideItemInfo();
+    }
 }

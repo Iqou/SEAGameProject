@@ -561,7 +561,7 @@ MonoBehaviour:
   priceText: {fileID: 1259051707}
   itemImage: {fileID: 1401459510}
   shopManager: {fileID: 1260401462}
-  shopInfo: {fileID: 0}
+  shopInfo: {fileID: 1319775257}
   price: 0
 --- !u!114 &95886509
 MonoBehaviour:
