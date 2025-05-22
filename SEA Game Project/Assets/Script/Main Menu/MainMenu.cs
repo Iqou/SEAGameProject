@@ -12,12 +12,12 @@ public class MainMenu : MonoBehaviour
     {
         // This will quit the application
         // Note: This won't work in the editor, but will work in a built application
-        // Application.Quit();
+        Application.Quit();
 
         // If you want to stop playing in the editor, uncomment the line below
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+        //#if UNITY_EDITOR
+        //UnityEditor.EditorApplication.isPlaying = false;
+        //#endif
     }
 
     
