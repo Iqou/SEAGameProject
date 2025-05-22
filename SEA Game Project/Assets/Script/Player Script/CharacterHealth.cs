@@ -7,6 +7,8 @@ using System.Xml.Serialization;
 public class PlayerHealth : MonoBehaviour
 {
     public Slider healthslider;
+    private bool isdead;
+    public GameManager gameManager;
 
     void Start()
     {
@@ -27,8 +29,10 @@ public class PlayerHealth : MonoBehaviour
         healthslider.value = StatsManager.instance.currentHealth;
         Canvas.ForceUpdateCanvases();
 
-        if (StatsManager.instance.currentHealth <= 0)
+        if (StatsManager.instance.currentHealth <= 0 && !isdead)
         {
+            isdead = true;
+            gameManager.gameOver();
             gameObject.SetActive(false);
         }
     }

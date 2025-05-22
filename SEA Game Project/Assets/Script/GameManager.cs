@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [Header("Persistent Objects")]
 
     public GameObject[] persistentObjects;
+    public GameObject gameOverUI;
 
 
     private void Awake()
@@ -44,5 +45,10 @@ public class GameManager : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    public void gameOver()
+    {
+        gameOverUI.SetActive(true);
     }
 }
