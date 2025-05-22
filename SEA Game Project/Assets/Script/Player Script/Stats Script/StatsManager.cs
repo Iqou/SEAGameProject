@@ -1,13 +1,14 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI; // Tambahkan ini
 
 public class StatsManager : MonoBehaviour
 {
     public static StatsManager instance;
     public StatsUI statsUI;
     public TMP_Text healthText;
+    public Slider healthSlider; // Tambahkan ini
 
     [Header("Combat Stats")]
     public int damage;
@@ -37,29 +38,35 @@ public class StatsManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateHealthText(); // Pastikan teks diperbarui dari awal
+        UpdateHealthSlider();
     }
-
 
     public void UpdateMaxHealth(int amount)
     {
         maxHealth += amount;
-        UpdateHealthText();
+        UpdateHealthSlider();
     }
 
     public void UpdateHealth(int amount)
     {
         currentHealth += amount;
 
-        // Batas atas dan bawah
+        // Clamp
         if (currentHealth > maxHealth)
             currentHealth = maxHealth;
         else if (currentHealth < 0)
             currentHealth = 0;
 
-        UpdateHealthText();
-    }
+        UpdateHealthSlider();
 
+        // Update slider juga
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = currentHealth;
+            Canvas.ForceUpdateCanvases();
+        }
+    }
 
     public void UpdateSpeed(int amount)
     {
@@ -79,17 +86,20 @@ public class StatsManager : MonoBehaviour
         }
     }
 
-    private void UpdateHealthText()
-    {
-        Debug.Log($"[UI] UpdateHealthText called: {currentHealth}/{maxHealth}");
+   
 
-        if (healthText != null)
+    private void UpdateHealthSlider()
+    {
+        Debug.Log($"[UI] UpdateHealthSlider called: {currentHealth}/{maxHealth}");
+
+        if (healthSlider != null)
         {
-            healthText.text = "HP: " + currentHealth + "/" + maxHealth;
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = currentHealth;
         }
         else
         {
-            Debug.LogWarning("healthText is not assigned in StatsManager");
+            Debug.LogWarning("healthSlider is not assigned in StatsManager");
         }
     }
 

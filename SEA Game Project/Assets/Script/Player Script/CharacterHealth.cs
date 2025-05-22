@@ -17,7 +17,9 @@ public class PlayerHealth : MonoBehaviour
     public void ChangeHealth(int amount)
     {
         StatsManager.instance.currentHealth += amount;
+        StatsManager.instance.currentHealth = Mathf.Clamp(StatsManager.instance.currentHealth, 0, StatsManager.instance.maxHealth);
         healthslider.value = StatsManager.instance.currentHealth;
+        Canvas.ForceUpdateCanvases();
 
         if (StatsManager.instance.currentHealth <= 0)
         {
