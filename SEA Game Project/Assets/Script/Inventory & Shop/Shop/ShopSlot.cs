@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ShopSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ShopSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
 {
     public ItemSO itemSO;
     public TMP_Text itemNameText;
@@ -40,5 +40,11 @@ public class ShopSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerExit(PointerEventData eventData)
     {
         shopInfo.HideItemInfo();
+    }
+
+    public void OnPointerMove(PointerEventData eventData)
+    {
+        if (itemSO != null)
+            shopInfo.FollowMouse();
     }
 }

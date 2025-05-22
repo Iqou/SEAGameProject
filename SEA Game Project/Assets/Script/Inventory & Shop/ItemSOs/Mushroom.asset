@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mushroom
   m_EditorClassIdentifier: 
   itemName: Mushroom
-  itemDescription: jamur jamur
+  itemDescription: Ni Item Nambah Darah. Udah.
   icon: {fileID: 8793915729297761979, guid: 91ea30d609e6541488e72b1af930396c, type: 3}
   isGold: 0
   currentHealth: 5
@@ -21,3 +21,4 @@ MonoBehaviour:
   speed: 0
   damage: 0
   duration: 0
+  maxQuantity: 5

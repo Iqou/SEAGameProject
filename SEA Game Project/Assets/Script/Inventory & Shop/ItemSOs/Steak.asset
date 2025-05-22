@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Steak
   m_EditorClassIdentifier: 
   itemName: Steak
-  itemDescription: jamur jamur
+  itemDescription: 'Nambah Damage cuyy asik
+
+'
   icon: {fileID: 5558420398955925738, guid: 57265e57cd3d13c43b8f138cfd277012, type: 3}
   isGold: 0
   currentHealth: 0
@@ -21,3 +23,4 @@ MonoBehaviour:
   speed: 0
   damage: 5
   duration: 0
+  maxQuantity: 5

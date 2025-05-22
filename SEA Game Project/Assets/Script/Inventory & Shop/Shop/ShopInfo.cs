@@ -1,5 +1,11 @@
  using UnityEngine;
  using TMPro;
+using NUnit.Framework;
+using System.Globalization;
+using Unity.VisualScripting;
+using System.Collections.Generic;
+using System.Collections;
+
 
 public class ShopInfo : MonoBehaviour
 {
@@ -24,6 +30,28 @@ public class ShopInfo : MonoBehaviour
 
         itemNameText.text = itemSO.itemName;
         itemDescriptionText.text = itemSO.itemDescription;
+
+        List<string> stats = new List<string>();
+        if (itemSO.currentHealth > 0) stats.Add("Health: " + itemSO.currentHealth.ToString());
+        if (itemSO.damage > 0) stats.Add("Damage: " + itemSO.damage.ToString());
+        if (itemSO.speed > 0) stats.Add("Speed: " + itemSO.speed.ToString());
+        if (itemSO.duration > 0) stats.Add("Duration: " + itemSO.duration.ToString());
+
+        if (stats.Count <= 0)
+            return;
+
+        for (int i = 0; i<statTexts.Length; i++)
+        {
+            if(i < stats.Count)
+            {
+                statTexts[i].text = stats[i];
+                statTexts[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                statTexts[i].gameObject.SetActive(false);
+            }
+        }
     }
 
     public void HideItemInfo()
