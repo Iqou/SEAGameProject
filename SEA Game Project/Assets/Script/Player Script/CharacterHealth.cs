@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Xml.Serialization;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -29,7 +30,14 @@ public class PlayerHealth : MonoBehaviour
 
         if (StatsManager.instance.currentHealth <= 0)
         {
-            gameObject.SetActive(false);
+            // gameObject.SetActive(false);
+            Die();
         }
+
+    }
+
+    void Die()
+    {
+        SceneManager.LoadScene("Gameoverscene");
     }
 }
