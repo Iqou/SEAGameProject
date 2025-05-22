@@ -5,19 +5,11 @@ using System;
 
 public class ShopManager : MonoBehaviour
 {
-    public static event Action<ShopManager, bool> OnShopStateChanged;
-
-    [SerializeField] private List<ShopItems> shopItems;
-
-    [SerializeField] private ShopSlot[] shopSlots;
+    
+       [SerializeField] private ShopSlot[] shopSlots;
 
     [SerializeField] private InventoryManager inventoryManager;
-    private void Start()
-    {
-        PopulateShopItems();
-        OnShopStateChanged?.Invoke(this, true);
-    }
-    public void PopulateShopItems()
+    public void PopulateShopItems(List<ShopItems> shopItems)
     {
         for (int i = 0; i < shopItems.Count && i < shopSlots.Length; i++)
         {
@@ -54,21 +46,37 @@ public class ShopManager : MonoBehaviour
         }
         return false;
     }
-    public void SellItem(ItemSO itemSO)
+    public bool SellItem(ItemSO itemSO)
     {
-        if(itemSO == null)
-            return;
+        if (itemSO == null)
+            return false;
 
+        int priceToSell = -1;
+
+        // Cari item di slot toko
         foreach (var slot in shopSlots)
         {
-            if(slot.itemSO == itemSO)
+            if (slot.itemSO == itemSO)
             {
-                inventoryManager.gold += slot.price;
-                inventoryManager.goldText.text = inventoryManager.gold.ToString() ;
-                return;
+                priceToSell = slot.price;
+                break;
             }
         }
+
+        // Jika item tidak ada di slot toko, pakai defaultPrice dari itemSO
+        if (priceToSell == -1)
+        {
+            priceToSell = itemSO.defaultPrice > 0 ? itemSO.defaultPrice / 2 : 1;
+        }
+
+        inventoryManager.gold += priceToSell;
+        inventoryManager.goldText.text = inventoryManager.gold.ToString();
+
+        inventoryManager.RemoveItem(itemSO);
+        return true;
     }
+
+
 }
 
 [System.Serializable]

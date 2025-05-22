@@ -8,6 +8,8 @@ public class ItemSO : ScriptableObject
     public string itemName;
     [TextArea]public string itemDescription;
     public Sprite icon;
+    [Header("Shop Info")]
+    public int defaultPrice = 10;
 
     public bool isGold;
 

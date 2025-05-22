@@ -32,6 +32,24 @@ public class InventoryManager : MonoBehaviour
         Loot.OnItemLooted -= AddItem;
     }
 
+    public void RemoveItem(ItemSO itemSO)
+    {
+        foreach (var slot in itemSlots)
+        {
+            if (slot.itemSO == itemSO)
+            {
+                slot.quantity--;
+
+                if (slot.quantity <= 0)
+                {
+                    slot.itemSO = null;
+                }
+
+                slot.UpdateUI();
+                break;
+            }
+        }
+    }
 
     public void AddItem(ItemSO itemSO, int quantity)
     {

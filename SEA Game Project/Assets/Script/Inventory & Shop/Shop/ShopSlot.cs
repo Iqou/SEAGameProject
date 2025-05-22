@@ -29,13 +29,17 @@ public class ShopSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnBuyButtonClicked()
     {
+
         shopManager.TryBuyItem(itemSO, price);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-               shopInfo.ShowItemInfo(itemSO);
-    }
+        if (itemSO != null)
+        {
+            shopInfo.ShowItemInfo(itemSO);
+        }
+            }
 
     public void OnPointerExit(PointerEventData eventData)
     {
