@@ -35,6 +35,11 @@ public class StatsManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        UpdateHealthText();
+    }
+
     private void Start()
     {
         UpdateHealthText(); // Pastikan teks diperbarui dari awal
@@ -81,7 +86,6 @@ public class StatsManager : MonoBehaviour
 
     private void UpdateHealthText()
     {
-        Debug.Log($"[UI] UpdateHealthText called: {currentHealth}/{maxHealth}");
 
         if (healthText != null)
         {

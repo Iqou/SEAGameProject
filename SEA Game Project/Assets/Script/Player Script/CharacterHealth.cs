@@ -14,6 +14,12 @@ public class PlayerHealth : MonoBehaviour
         healthslider.maxValue = StatsManager.instance.maxHealth;
         healthslider.value = StatsManager.instance.currentHealth;
     }
+
+    public void Update()
+    {
+        healthslider.value = StatsManager.instance.currentHealth;
+    }
+
     public void ChangeHealth(int amount)
     {
         StatsManager.instance.currentHealth += amount;
