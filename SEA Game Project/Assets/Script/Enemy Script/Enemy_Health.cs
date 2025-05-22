@@ -26,6 +26,7 @@ public class Enemy_Health : MonoBehaviour
         else if (currentHealth <= 0)
         {
             OnMonsterDefeated(expReward);
+            gameObject.SetActive(false);
             Destroy(gameObject);
         }
     }

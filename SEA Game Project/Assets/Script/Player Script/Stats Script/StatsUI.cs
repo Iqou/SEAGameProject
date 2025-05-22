@@ -44,9 +44,15 @@ public class StatsUI : MonoBehaviour
         statsSlots[1].GetComponentInChildren<TMP_Text>().text = "Speed: " + StatsManager.instance.speed;
 
     }
+
+    public void UpdateHealth()
+    {
+        statsSlots[2].GetComponentInChildren<TMP_Text>().text = "Health: " + StatsManager.instance.maxHealth;
+    }
     public void UpdateAllStats()
     {
         UpdateDamage();
         UpdateSpeed();
+        UpdateHealth();
     }
 }
