@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962fc15ec20588c468eeaeb639f056ec, type: 3}
-  m_Name: NPC
+  m_Script: {fileID: 11500000, guid: 1b2803ef1adfc34489cb771cca639c34, type: 3}
+  m_Name: TidakMembantu
   m_EditorClassIdentifier: 
-  actorName: NPC
-  potrait: {fileID: 4334783836991956000, guid: 371a2bf30e0039540947ed970af1002b, type: 3}
+  lines:
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+    text: DASAR ORANG TIDAK TAU TERIMA KASIH
+  options: []

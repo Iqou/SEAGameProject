@@ -14,15 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
-    text: HALLO WORLD
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
-    text: HEY BUKAN BEGITU CARANYA
+    text: HALLO PLAYER
   - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
-    text: PAKE PRINTF
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
-    text: PRINTF HALLO WORLD
+    text: AKU AKAN MENJELASKAN MEKANISME GAME INI
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+    text: GUNAKAN W,A,S,D UNTUK BERGERAK
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+    text: TOMBOL L UNTUK INTERAKSI DENGAN NPC
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+    text: ATTACK MENGGUNAKAN SWORD TEKAN K
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+    text: KLO MAU PAKE BOW PAKE TOMBOL J
   options:
-  - optionText: UDAH YAPPIG NYA
-    nextDialogue: {fileID: 11400000, guid: d3033f3e13bfa894d871ae93f6d84521, type: 2}
-  - optionText: BYE BYE
-    nextDialogue: {fileID: 11400000, guid: c4477380a7191b3488667966652a74c9, type: 2}
+  - optionText: BISA ULANGI LAGI TIDAK?
+    nextDialogue: {fileID: 11400000}
+  - optionText: TERIMAKASIH BANTUANNYA
+    nextDialogue: {fileID: 11400000, guid: bcd54f258afc8aa4083cadd641600549, type: 2}

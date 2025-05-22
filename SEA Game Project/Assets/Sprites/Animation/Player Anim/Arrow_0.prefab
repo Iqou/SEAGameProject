@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4948482975798943153}
   direction: {x: 1, y: 0}
-  lifeSpawn: 2
+  lifeSpawn: 0.3
   speed: 20
   damage: 1
   enemyLayer:
@@ -188,6 +188,6 @@ MonoBehaviour:
     m_Bits: 128
   sr: {fileID: 925909396597890220}
   buriedSprite: {fileID: -6662812116773042688, guid: 1026a20db2c552646a83bbd33ba1d0d2, type: 3}
-  knockbackForce: 2
+  knockbackForce: 0.3
   knockbackTime: 0.3
-  stunTime: 1
+  stunTime: 0.3

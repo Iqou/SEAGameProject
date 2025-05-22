@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 962fc15ec20588c468eeaeb639f056ec, type: 3}
   m_Name: MC
   m_EditorClassIdentifier: 
-  actorName: NPC
-  potrait: {fileID: 4334783836991956000, guid: 371a2bf30e0039540947ed970af1002b, type: 3}
+  actorName: MC
+  potrait: {fileID: -7978735674136817684, guid: 71f8ccf575a303041a57ce6095ffee16, type: 3}
