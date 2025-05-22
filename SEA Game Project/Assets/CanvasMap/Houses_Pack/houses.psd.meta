@@ -262,6 +262,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1422,7 +1435,59 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      houses_0: 584374925798354339
+      houses_1: -3298002869832431796
+      houses_10: -1812853481934861039
+      houses_11: -4408899943759144453
+      houses_12: -4178736949937364435
+      houses_13: -8153680231557983559
+      houses_14: 7608105642705375209
+      houses_15: 2373733598564452021
+      houses_16: -1672998761175207969
+      houses_17: 1081959064669237344
+      houses_18: 8755635665629803727
+      houses_19: 4323759710514417277
+      houses_2: -1538702627613937882
+      houses_20: 6862363052645781871
+      houses_21: 5136009905638925935
+      houses_22: -8080209330808519490
+      houses_23: -2230136908191201025
+      houses_24: 1044705654439052302
+      houses_25: -274003081349023583
+      houses_26: 5769213291074049171
+      houses_27: -1638157924002549342
+      houses_28: 5608523716801887333
+      houses_29: -1016331936424338784
+      houses_3: -7348991793363323239
+      houses_30: -1838914477522394420
+      houses_31: 4008267440505934108
+      houses_32: -1942679902817793362
+      houses_33: 492814307994952873
+      houses_34: -410277651133118227
+      houses_35: -8660494632911356901
+      houses_36: -2466140752294869526
+      houses_37: 1376637415628694152
+      houses_38: 2932661999353195444
+      houses_39: 4553743752133694984
+      houses_4: 4500187480589423747
+      houses_40: -6214666347814908062
+      houses_41: 4231214484280016056
+      houses_42: 6473601605703706538
+      houses_43: -7691114084976948871
+      houses_44: 5278497661291272238
+      houses_45: 6522333174240656577
+      houses_46: 189516128249753328
+      houses_47: 9223246922321309419
+      houses_48: -7554153250591223044
+      houses_49: 6906216908655939871
+      houses_5: 1092234185613066999
+      houses_50: 6287513521939191112
+      houses_51: 6715817551897836311
+      houses_6: 6399064941696225175
+      houses_7: -834151573419368315
+      houses_8: -3143875830690812851
+      houses_9: 781607833170772574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class InventorySlot : MonoBehaviour, IPointerClickHandler
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler
 {
     public ItemSO itemSO;
     public int quantity;
@@ -16,6 +16,8 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 
     private InventoryManager inventoryManager;
     private static ShopManager activeShop;
+
+
 
 
     private void Start()
@@ -92,4 +94,8 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        throw new System.NotImplementedException();
     }
+}

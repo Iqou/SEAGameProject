@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class ShopSlot : MonoBehaviour
+public class ShopSlot : MonoBehaviour, IPointEnterHandler
 {
     public ItemSO itemSO;
     public TMP_Text itemNameText;
@@ -12,6 +13,7 @@ public class ShopSlot : MonoBehaviour
     public Image itemImage;
 
     [SerializeField] private ShopManager shopManager;
+    [SerializeField] private ShopInfo shopInfo;
 
     public int price;
 
@@ -28,14 +30,11 @@ public class ShopSlot : MonoBehaviour
 
     public void OnBuyButtonClicked()
     {
-        Debug.Log($"[ShopSlot] Buy button clicked for: {itemSO.itemName}, Price: {price}");
-        if (shopManager == null)
-        {
-            Debug.LogError("ShopManager is NULL in ShopSlot!");
-            return;
-        }
-
         shopManager.TryBuyItem(itemSO, price);
+    }
+    public void OnPointEnter(PointerEventData eventData)
+    {
+        shopInfo.ShowItemInfo(itemSO);
     }
 
 }
