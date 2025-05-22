@@ -3346,7 +3346,7 @@ MonoBehaviour:
   statsUI: {fileID: 1810014364}
   healthSliderText: {fileID: 1140349875}
   healthSlider: {fileID: 0}
-  damage: 1
+  damage: 2
   knockbackForce: 10
   weaponRange: 0.7
   knockbackTime: 0.15
