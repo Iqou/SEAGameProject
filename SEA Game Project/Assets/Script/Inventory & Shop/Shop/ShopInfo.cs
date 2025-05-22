@@ -23,7 +23,7 @@ public class ShopInfo : MonoBehaviour
         infoPanel.alpha = 1;
 
         itemNameText.text = itemSO.itemName;
-        itemDescriptionText.text = "";
+        itemDescriptionText.text = itemSO.itemDescription;
     }
 
     public void HideItemInfo()

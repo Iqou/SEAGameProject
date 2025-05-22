@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class InventorySlot : MonoBehaviour, IPointerEnterHandler
+public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
     public ItemSO itemSO;
     public int quantity;
@@ -58,9 +58,6 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler
                 }
                 else
                 {
-
-
-
                     if (itemSO.currentHealth > 0 && StatsManager.instance.currentHealth >= StatsManager.instance.maxHealth)
                         return;
 

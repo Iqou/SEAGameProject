@@ -6,6 +6,7 @@ using System;
 public class ShopManager : MonoBehaviour
 {
     public static event Action<ShopManager, bool> OnShopStateChanged;
+
     [SerializeField] private List<ShopItems> shopItems;
 
     [SerializeField] private ShopSlot[] shopSlots;
