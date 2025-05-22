@@ -46,10 +46,5 @@ public class GameManager : MonoBehaviour
         Destroy(gameObject);
     }
 
-
-    public static class GameData
-    {
-    public static bool retryFromGameOver = false;
-    }
-
+        
 }

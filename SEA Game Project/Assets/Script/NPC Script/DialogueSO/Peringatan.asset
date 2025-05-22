@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2803ef1adfc34489cb771cca639c34, type: 3}
+  m_Name: Peringatan
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
+    text: HEY KAMU BARU YA DISINI
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+    text: YA AKU BARU DATANG TADI
+  - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
+    text: APAKAH KAMU ADA TUJUAN SETELAH INI?
+  options:
+  - optionText: AKU INGIN LANJUT MENJELAJAH
+    nextDialogue: {fileID: 11400000, guid: 1994c8ba0fef23d49aa398ca5583f7d4, type: 2}
+  - optionText: AKU MASIH IGNIN MELIHAT LIHAT DESA
+    nextDialogue: {fileID: 11400000, guid: ddc81b55605619848b4bc7f3c5c044dd, type: 2}
