@@ -4,11 +4,12 @@ using System.Collections;
 
 public class NPC : MonoBehaviour
 {
-    public enum NPCState{Default, Idle, Talk}
-    public NPCState currentState = NPCState.Idle;
+    public enum NPCState{Default, Idle, Talk, Wander}
+    public NPCState currentState = NPCState.Wander;
     private NPCState defaultstate;
 
     public NPC_Talk talk;
+    public NPC_Wander wander;
 
 
     void Start()
@@ -21,6 +22,7 @@ public class NPC : MonoBehaviour
     {
         currentState = newState;
         talk.enabled = newState == NPCState.Talk;
+        wander.enabled = newState == NPCState.Wander;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,7 +34,7 @@ public class NPC : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.CompareTag("Player")){
-            SwitchState(defaultstate);
+            SwitchState(NPCState.Wander);
         }
     }
 }
