@@ -37765,7 +37765,7 @@ MonoBehaviour:
   sceneToLoad: RPG 2
   fadeAnim: {fileID: 1721376225}
   fadeTime: 1
-  newPlayerPosition: {x: 0.03, y: -2.53}
+  newPlayerPosition: {x: 0.03, y: -1.53}
 --- !u!61 &2073790045
 BoxCollider2D:
   m_ObjectHideFlags: 0

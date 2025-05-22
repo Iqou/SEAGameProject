@@ -23,5 +23,6 @@ public class SceneChanger : MonoBehaviour
         yield return new WaitForSeconds(fadeTime);
         player.position = newPlayerPosition;    
         SceneManager.LoadScene(sceneToLoad);
+        Debug.Log("Scene Loaded!");
     }
 }
