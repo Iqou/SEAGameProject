@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2803ef1adfc34489cb771cca639c34, type: 3}
+  m_Name: Setelah Tutorial
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+    text: KARENA AKU SUDAH MEMBANTU KAMU GILIRAN KAMU MEMBANTU AKU
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+    text: APA YANG BISA KU BANTU
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+    text: TOLONG KALAHKAN PARA ORC YANG MEYERANG AREIS
+  options:
+  - optionText: BAIKLAH AKU AKAN MEMBANTU
+    nextDialogue: {fileID: 11400000, guid: 3b1908b9114b25a4b990a7c1318ec2d8, type: 2}
+  - optionText: AKU TIDAK AKAN MEMBANTUMU
+    nextDialogue: {fileID: 11400000, guid: 5baa55eea1a7cd4429e5898d18058985, type: 2}
