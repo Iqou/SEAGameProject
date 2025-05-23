@@ -1923,7 +1923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e781fd54f4e79954b87c1eff61c3d690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 3
+  currentState: 1
   talk: {fileID: 173966358}
   wander: {fileID: 173966354}
 --- !u!50 &173966357
@@ -35322,7 +35322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e781fd54f4e79954b87c1eff61c3d690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 3
+  currentState: 1
   talk: {fileID: 385491374}
   wander: {fileID: 385491370}
 --- !u!50 &385491373
@@ -45422,7 +45422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e781fd54f4e79954b87c1eff61c3d690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 3
+  currentState: 1
   talk: {fileID: 879180846}
   wander: {fileID: 879180842}
 --- !u!50 &879180845
@@ -49713,7 +49713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e781fd54f4e79954b87c1eff61c3d690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 3
+  currentState: 1
   talk: {fileID: 1238993383}
   wander: {fileID: 1238993379}
 --- !u!50 &1238993382

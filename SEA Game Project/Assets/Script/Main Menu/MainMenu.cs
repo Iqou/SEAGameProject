@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public DialogueSO dialogueSO;
     public void StartGame()
     {
         // You can load by build index or scene name
