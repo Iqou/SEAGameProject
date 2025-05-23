@@ -15,7 +15,9 @@ public class DialogueManager : MonoBehaviour
   public bool isDialogueActive;
   public Button[] choiceButton;
 
+
   public DialogueSO currentDialogue;
+  public DialogueSO dialogueSO;
   private int dialogueIndex;
   Audiomanager Audiomanager;
 
@@ -36,7 +38,12 @@ public class DialogueManager : MonoBehaviour
 
   }
 
-  public void StartDialogue(DialogueSO dialogueSO)
+    public void Start()
+    {
+        StartDialogue(dialogueSO);
+    }
+
+    public void StartDialogue(DialogueSO dialogueSO)
   {
 	  currentDialogue = dialogueSO;
 	  dialogueIndex = 0;
@@ -154,4 +161,6 @@ public class DialogueManager : MonoBehaviour
   void buttonsound(){
 	  Audiomanager.PlaySFX(Audiomanager.button);
   }
+
+
 }
