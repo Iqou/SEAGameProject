@@ -8,14 +8,14 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        pauseMenu.setActive(true);
+        pauseMenu.SetActive(true);
         // Pause the game when the script starts
         Time.timeScale = 0f;
     }
 
     public void Resume()
     {
-        pauseMenu.setActive(false);
+        pauseMenu.SetActive(false);
         // Resume the game when the script starts
         Time.timeScale = 1f;
     }
@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         // Load the main menu scene
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu");
     }
 
 
