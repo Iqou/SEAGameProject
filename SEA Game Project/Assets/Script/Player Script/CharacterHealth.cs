@@ -43,5 +43,6 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         SceneManager.LoadScene("Gameoverscene");
+        StatsManager.instance.currentHealth = StatsManager.instance.maxHealth;
     }
 }
