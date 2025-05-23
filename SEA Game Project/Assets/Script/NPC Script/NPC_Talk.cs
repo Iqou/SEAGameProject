@@ -32,7 +32,7 @@ public class NPC_Talk : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-   
+        DialogueManager.Instance.isDialogueActive = true;
     }
 
     // Update is called once per frame
