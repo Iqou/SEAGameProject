@@ -43850,6 +43850,7 @@ GameObject:
   - component: {fileID: 717936230}
   - component: {fileID: 717936232}
   - component: {fileID: 717936233}
+  - component: {fileID: 717936234}
   m_Layer: 0
   m_Name: NPC_Sprite
   m_TagString: Untagged
@@ -44004,7 +44005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 1
   talk: {fileID: 717936231}
-  wander: {fileID: 0}
+  wander: {fileID: 717936234}
 --- !u!58 &717936233
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44041,6 +44042,24 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &717936234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717936226}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2a76581da462f43b3e06770762533f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderWidth: 5
+  wanderHeight: 5
+  startingPosition: {x: 0, y: 0}
+  pauseDuration: 1
+  speed: 2
+  target: {x: 0, y: 0}
 --- !u!1 &722774121
 GameObject:
   m_ObjectHideFlags: 0
@@ -51399,6 +51418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthslider: {fileID: 1941293015}
   gameManager: {fileID: 0}
+  movement: {fileID: 0}
 --- !u!61 &1544995179
 BoxCollider2D:
   m_ObjectHideFlags: 0

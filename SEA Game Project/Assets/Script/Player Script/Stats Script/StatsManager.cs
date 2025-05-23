@@ -99,27 +99,14 @@ public class StatsManager : MonoBehaviour
 
     private void UpdateHealthSlider()
     {
-        Debug.Log($"[UI] UpdateHealthSlider called: {currentHealth}/{maxHealth}");
-
-        
         if (healthSlider != null)
         {
             healthSlider.maxValue = maxHealth;
             healthSlider.value = currentHealth;
         }
-        else
-        {
-            Debug.LogWarning("healthSlider is not assigned in StatsManager");
-        }
-
-        
         if (healthSliderText != null)
         {
             healthSliderText.text = $"{currentHealth} / {maxHealth}";
-        }
-        else
-        {
-            Debug.LogWarning("healthSliderText is not assigned in StatsManager");
         }
     }
     public void UpgradeStat(string statName)
@@ -153,8 +140,6 @@ public class StatsManager : MonoBehaviour
         {
             statsUI.UpdateAllStats();
         }
-
-        Debug.Log($"Stat '{statName}' berhasil di-upgrade. Sisa poin: {levelPoints}");
     }
 
 

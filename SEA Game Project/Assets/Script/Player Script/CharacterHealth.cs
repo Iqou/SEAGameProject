@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthslider;
     private bool isdead;
     public GameManager gameManager;
+    public Movement movement;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
     public void Update()
     {
         healthslider.value = StatsManager.instance.currentHealth;
+    
     }
 
     public void ChangeHealth(int amount)
@@ -33,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
         if (StatsManager.instance.currentHealth <= 0 && !isdead)
         {
             // gameObject.SetActive(false);
+            transform.position = Vector3.zero;
             Die();
 
         }

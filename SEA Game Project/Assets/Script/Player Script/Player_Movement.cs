@@ -37,6 +37,7 @@ public class Movement : MonoBehaviour
     // Update is called 50x per frame
     void FixedUpdate()
     {
+
         if (isShooting == true)
         {
             rb.linearVelocity = Vector2.zero;
@@ -100,6 +101,10 @@ public class Movement : MonoBehaviour
     }
     void PlayFootsteps(){
         Audiomanager.PlaySFX(Audiomanager.walking);
+    }
+    public void setzero()
+    {
+        transform.position = Vector3.zero;
     }
 }
 
