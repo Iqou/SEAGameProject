@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Peringatan
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
-    text: HEY KAMU BARU YA DISINI
   - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
-    text: YA AKU BARU DATANG TADI
+    text: HEY KAMU BARU YA DISINI
   - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+    text: YA AKU BARU DATANG TADI
+  - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
     text: APAKAH KAMU ADA TUJUAN SETELAH INI?
   options:
   - optionText: AKU INGIN LANJUT MENJELAJAH

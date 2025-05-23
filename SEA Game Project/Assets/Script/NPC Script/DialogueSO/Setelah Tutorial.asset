@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Setelah Tutorial
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
-    text: KARENA AKU SUDAH MEMBANTU KAMU GILIRAN KAMU MEMBANTU AKU
   - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
-    text: APA YANG BISA KU BANTU
+    text: KARENA AKU SUDAH MEMBANTU KAMU GILIRAN KAMU MEMBANTU AKU
   - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+    text: APA YANG BISA KU BANTU
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
     text: TOLONG KALAHKAN PARA ORC YANG MEYERANG AREIS
   options:
   - optionText: BAIKLAH AKU AKAN MEMBANTU

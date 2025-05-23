@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: SoloDialogue
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: AKU SUDAH KESASAR CUKUP LAMA ( L to Interact)
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: DAN AKHIRNYA AKU MENEMUKAN DESA
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: DESA INI SANGAT BAGUS
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: AKU AKAN MENETAP DISINI
   options: []

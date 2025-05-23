@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: PergiDariSIni
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: 3a1c2e981fb97084c90a486e7d7ad53b, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: HEY APA YANG KAU LAKUKAN DISINI
-  - speaker: {fileID: 11400000, guid: 3a1c2e981fb97084c90a486e7d7ad53b, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: CEPAT PERGI TEMPAT INI BERBAHAYA
-  - speaker: {fileID: 11400000, guid: 3a1c2e981fb97084c90a486e7d7ad53b, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: APA YANG MEMBUAT TEMPAT INI BERBAHAYA?
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: ADA BANYAK ORC DI TEMPAT INI
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: JIKA KAMU MENCARI TEMPAT AMAN LEBIH BAIK KEMBALI LAGI
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: ATAU KAU BISA PERGI KE ARAH UTARA DI SANA ADA TOKO YANG AMAN DARI SERANGAN
       ORC
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: TENANG SAJA AKU BISA MENJAGA DIRIKU SENDIRI
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+  - speaker: {fileID: 11400000, guid: e88fbf9156cb221469408a230b4f87ff, type: 2}
     text: TERIMA KASIH ATAS PERINGATANNYA
   options: []
