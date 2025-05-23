@@ -111817,7 +111817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1184199505}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: ' NPC 1 MAP 2'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139809,7 +139809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactAnim: {fileID: 2026642348}
-  dialogueSO: {fileID: 11400000, guid: c86ea9fefa8826d4986d776d76891da4, type: 2}
+  dialogueSO: {fileID: 11400000, guid: 5031be1523b62a04ea16de2a6f834665, type: 2}
 --- !u!95 &1606424396
 Animator:
   serializedVersion: 7
