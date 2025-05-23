@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sibuk Berlari
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: a6080e64f2b6c9c42b4ec5db6f245ae9, type: 2}
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
     text: JANGAN GANGGU AKU LARI-LARI
   options:
   - optionText: TIDAK PEDULI

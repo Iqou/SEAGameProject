@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Opening
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: HALLO PLAYER
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: AKU AKAN MENJELASKAN MEKANISME GAME INI
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: GUNAKAN W,A,S,D UNTUK BERGERAK
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: TOMBOL L UNTUK INTERAKSI DENGAN NPC
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: ATTACK MENGGUNAKAN SWORD TEKAN K
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: KLO MAU PAKE BOW PAKE TOMBOL J
   options:
   - optionText: BISA ULANGI LAGI TIDAK?

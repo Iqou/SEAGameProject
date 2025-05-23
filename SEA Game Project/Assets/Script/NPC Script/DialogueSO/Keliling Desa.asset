@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Keliling Desa
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: SILAHKAN BERKELILING DESA INI SEPUASNYA
-  - speaker: {fileID: 11400000, guid: 52f3de5755621534a85bd08efa052ced, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: DESA AERIS MENYAMBUTMU
   options: []

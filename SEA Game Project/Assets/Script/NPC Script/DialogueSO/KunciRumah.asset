@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: KunciRumah
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
+  - speaker: {fileID: 11400000, guid: ade314f906b562c4f89d775310b468b2, type: 2}
     text: KENAPA KAMU BULAK BALIK DI DEPAN RUMAH
-  - speaker: {fileID: 11400000, guid: ade314f906b562c4f89d775310b468b2, type: 2}
-    text: KUNCI RUMAH AKU HILANG
   - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
-    text: APAKAH HARUS DIBANTU CARI???
+    text: KUNCI RUMAH AKU HILANG
   - speaker: {fileID: 11400000, guid: ade314f906b562c4f89d775310b468b2, type: 2}
+    text: APAKAH HARUS DIBANTU CARI???
+  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
     text: TIDAK USAH SAYA BISA SENDIRI
   options: []

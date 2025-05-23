@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TidakMembantu
   m_EditorClassIdentifier: 
   lines:
-  - speaker: {fileID: 11400000, guid: d8445fac8c6b93f41b56f70235e04cf2, type: 2}
+  - speaker: {fileID: 11400000, guid: ef2cdb7eb32afb544a725de89f898abe, type: 2}
     text: DASAR ORANG TIDAK TAU TERIMA KASIH
   options: []
