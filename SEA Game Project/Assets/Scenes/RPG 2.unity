@@ -134962,7 +134962,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 13.076569, y: 88.17473}
+  m_Offset: {x: 13.076569, y: 88.40519}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -134972,7 +134972,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.3735428, y: 0.70458984}
+  m_Size: {x: 2.3735428, y: 0.2436676}
   m_EdgeRadius: 0
 --- !u!61 &1235493800
 BoxCollider2D:
@@ -135071,7 +135071,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 4.901847, y: 109.096924}
+  m_Offset: {x: 4.901847, y: 109.03555}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -135081,7 +135081,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.20294523, y: 1.9312134}
+  m_Size: {x: 0.20294571, y: 2.0539627}
   m_EdgeRadius: 0
 --- !u!1 &1240136302
 GameObject:
@@ -140406,7 +140406,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 12.99398, y: 88.27831}
+  m_Offset: {x: 12.99398, y: 90.47197}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -140416,7 +140416,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.470852, y: 0.3957672}
+  m_Size: {x: 2.470852, y: 0.27627563}
   m_EdgeRadius: 0
 --- !u!114 &1756035280
 MonoBehaviour:
@@ -142131,7 +142131,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 4.626567, y: 108.51892}
+  m_Offset: {x: 3.0676527, y: 109.54387}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -142141,7 +142141,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.24427032, y: 3.055542}
+  m_Size: {x: 0.2688198, y: 3.0923767}
   m_EdgeRadius: 0
 --- !u!1001 &1763990678
 PrefabInstance:
