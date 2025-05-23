@@ -5,6 +5,7 @@ public class PersistentCameraManager : MonoBehaviour
 {
     public GameObject camera1; 
     public GameObject camera2;
+    public GameObject camera3;
     public GameObject Shops;
 
     private void Awake()
@@ -30,12 +31,21 @@ public class PersistentCameraManager : MonoBehaviour
         {
             if (camera1 != null) camera1.SetActive(true);
             if (camera2 != null) camera2.SetActive(false);
+            if (camera3 != null) camera3.SetActive(false);
             if (Shops != null) Shops.SetActive(false);
         }
         else if (sceneName == "RPG 2")
         {
             if (camera1 != null) camera1.SetActive(false);
             if (camera2 != null) camera2.SetActive(true);
+            if (camera3 != null) camera3.SetActive(false);
+            if (Shops != null) Shops.SetActive(true);
+        }
+        else if (sceneName == "RPG3")
+        {
+            if (camera1 != null) camera1.SetActive(false);
+            if (camera2 != null) camera2.SetActive(false);
+            if (camera3 != null) camera3.SetActive(true);
             if (Shops != null) Shops.SetActive(true);
         }
     }
